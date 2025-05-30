@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+#include"coord_comp.hpp"
+int main(){
+	coord_comp<int>comp;
+	comp.add(1);
+	comp.add(2);
+	comp.add(-1);
+	comp.add(2);
+	comp.build();
+	for(int x:comp.a)cout<<x<<'\n';
+}

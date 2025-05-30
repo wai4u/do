@@ -1,0 +1,16 @@
+template<class A>
+vector<int>manacher(A a,bool diam=0){
+	int n=a.size();
+	vector<int>D(n+n-1);
+	for(int c=0,r=0,i=1;i<n+n-2;i++){
+		int j=i+1>>1,k=i-j;
+		int d=r<=k?0:min(r-k,D[c+c-i]);
+		j-=d+1,k+=d+1;
+		while(0<=j&&k<n&&a[j]==a[k])d++,j--,k++;
+		D[i]=d;
+		k--;
+		if(k>r)r=k,c=i;
+	}
+	if(diam)for(int i=0;i<n+n-1;i++)D[i]+=D[i]+(~i&1);
+	return D;
+}
