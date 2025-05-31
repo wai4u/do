@@ -1,0 +1,12 @@
+#pragma GCC optimize("Ofast,unroll-loops")
+#include<bits/stdc++.h>
+using namespace std;
+#include"suffix_array.hpp"
+int main(){
+	ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+	string s;
+	cin>>s;
+	int n=s.size();
+	for(int i:suffix_array(s))cout<<i<<' ';
+	cout<<'\n';
+}

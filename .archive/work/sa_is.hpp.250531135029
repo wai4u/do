@@ -1,0 +1,63 @@
+vector<int>sa_is(vector<int>a){
+	int n=a.size();
+	int m=*min_element(a.begin(),a.end());
+	for(int&x:a)x=x-m+1;
+	m=*max_element(a.begin(),a.end())+1;
+	a.push_back(0);
+	n++;
+	vector<bool>is_s(n),is_lms(n);
+	vector<int>lms,L(m),R(m);
+	is_s[n-1]=1;
+	for(int i=n;--i;){
+		is_s[i-1]=a[i-1]==a[i]?is_s[i]:a[i-1]<a[i];
+		if(is_lms[i]=!is_s[i-1]&&is_s[i])lms.push_back(i);
+	}
+	reverse(lms.begin(),lms.end());
+	int k=lms.size();
+	for(int x:a)R[x]++;
+	for(int i=0;i<m-1;i++)R[i+1]+=L[i+1]=R[i];
+	auto induce=[&](){
+		vector<int>sa(n,-1);
+		auto b=R;
+		for(int i=k;i--;)sa[--b[a[lms[i]]]]=lms[i];
+		b=L;
+		for(int i=0;i<n-1;i++)if(sa[i]>0){
+			int j=sa[i]-1;
+			if(!is_s[j])sa[b[a[j]]++]=j;
+		}
+		b=R;
+		for(int i=n;--i;)if(sa[i]>0){
+			int j=sa[i]-1;
+			if(is_s[j])sa[--b[a[j]]]=j;
+		}
+		return sa;
+	};
+	auto sa=induce();
+	vector<int>rank(n,-1);
+	int r=0;
+	rank[n-1]=0;
+	for(int i=1,j=n-1;i<n;i++)if(is_lms[sa[i]]){
+		int k=sa[i];
+		for(int d=0;d<n;d++){
+			if(a[j+d]<a[k+d]){r++;break;}
+			if(d&&is_lms[j+d]){r+=!is_lms[k+d];break;}
+		}
+		rank[j=k]=r;
+	}
+	if(r==k-1){
+		vector<int>tmp(k);
+		for(int i:lms)tmp[rank[i]]=i;
+		swap(tmp,lms);
+	}else{
+		rank.erase(remove_if(rank.begin(),rank.end(),[&](int r){return r<0;}),rank.end());
+		auto ord=sa_is(rank);
+		for(int&i:ord)i=lms[i];
+		swap(ord,lms);
+	}
+	sa=induce();
+	return{sa.begin()+1,sa.end()};
+}
+template<class A>
+vector<int>sa_is(A a){
+	return sa_is(vector<int>(a.begin(),a.end()));
+}

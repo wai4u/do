@@ -1,0 +1,33 @@
+#include"arrops.hpp"
+//doubling+counting argsort
+template<class A>
+vector<int>suffix_array(A a){
+	int n=a.size();
+	vector<int>rank=rankify(a),L(n),R(n),sa(n),sa_R(n),key(n),c;
+	int d=1;
+	while(1){
+		c.assign(n+2,0);
+		for(int i=0;i<n;i++){
+			L[i]=rank[i];
+			R[i]=i+d<n?rank[i+d]+1:0;
+			c[R[i]+1]++;
+		}
+		for(int i=1;i<n+1;i++)c[i+1]+=c[i];
+		for(int i=0;i<n;i++)sa_R[c[R[i]]++]=i;
+		c.assign(n+2,0);
+		for(int i=0;i<n;i++){
+			key[i]=rank[sa_R[i]];
+			c[key[i]+1]++;
+		}
+		for(int i=1;i<n;i++)c[i+1]+=c[i];
+		for(int i=0;i<n;i++)sa[c[key[i]]++]=sa_R[i];
+		if(d>=n)return sa;
+		d<<=1;
+		int r=0;
+		rank[sa[0]]=r;
+		for(int i=1;i<n;i++){
+			r+=L[sa[i]]>L[sa[i-1]]||R[sa[i]]>R[sa[i-1]];
+			rank[sa[i]]=r;
+		}
+	}
+}

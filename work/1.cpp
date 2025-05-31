@@ -1,33 +1,8 @@
 #include<bits/stdc++.h>
+#include"suffix_array.hpp"
 using namespace std;
-//doubling
-template<class A>
-vector<int>suffix_array(A a){
-	int n=a.size();
-	auto mn=*min_element(a.begin(),a.end());
-	vector<int>rank(n),sa(n);
-	for(int i=0;i<n;i++)rank[i]=a[i]-mn+1,sa[i]=i;
-	vector<pair<int,int>>key(n);
-	int d=1;
-	while(1){
-		for(int i=0;i<n;i++)key[i]={rank[i],i+d<n?rank[i+d]:0};
-		sort(sa.begin(),sa.end(),[&](int i,int j){
-			return key[i]<key[j];
-		});
-		if(d>=n)return sa;
-		d<<=1;
-		int r=1;
-		rank[sa[0]]=r;
-		for(int i=1;i<n;i++){
-			r+=key[sa[i]]>key[sa[i-1]];
-			rank[sa[i]]=r;
-		}
-	}
-}
 int main(){
 	string s;
 	cin>>s;
-	int n=s.size();
-	for(int i:suffix_array(s))cout<<i<<' ';
-	cout<<'\n';
+	suffix_array(s);
 }
