@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 //doubling
 template<class A>
 vector<int>suffix_array(A a){
@@ -7,10 +5,10 @@ vector<int>suffix_array(A a){
 	auto mn=*min_element(a.begin(),a.end());
 	vector<int>rank(n),sa(n);
 	for(int i=0;i<n;i++)rank[i]=a[i]-mn+1,sa[i]=i;
-	vector<pair<int,int>>key(n);
+	vector<long>key(n);
 	int d=1;
 	while(1){
-		for(int i=0;i<n;i++)key[i]={rank[i],i+d<n?rank[i+d]:0};
+		for(int i=0;i<n;i++)key[i]=(long)rank[i]<<30|(i+d<n?rank[i+d]:0);
 		sort(sa.begin(),sa.end(),[&](int i,int j){
 			return key[i]<key[j];
 		});
@@ -23,11 +21,4 @@ vector<int>suffix_array(A a){
 			rank[sa[i]]=r;
 		}
 	}
-}
-int main(){
-	string s;
-	cin>>s;
-	int n=s.size();
-	for(int i:suffix_array(s))cout<<i<<' ';
-	cout<<'\n';
 }
