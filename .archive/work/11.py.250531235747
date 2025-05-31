@@ -1,0 +1,41 @@
+from math import gcd
+from collections import deque
+
+def compare_fractions(a, b, c, d):
+    """ a/b と c/d の大小比較。ad < bc なら a/b < c/d """
+    return a * d < b * c
+
+def find_min_q(A, B, C, D):
+    # 初期ノード: (0/1, 1/0)
+    queue = deque([(0, 1, 1, 0)])  # (p, q, r, s)
+    min_q = float('inf')
+    
+    while queue:
+        p, q, r, s = queue.popleft()
+        # mediant の計算
+        m, n = p + r, q + s
+        
+        # 分母が制約を超える場合はスキップ
+        if n > 10**18:
+            continue
+            
+        # mediant m/n と A/B, C/D の比較
+        if compare_fractions(m, n, A, B):  # m/n < A/B
+            queue.append((m, n, r, s))  # 右の子
+        elif compare_fractions(C, D, m, n):  # m/n > C/D
+            queue.append((p, q, m, n))  # 左の子
+        else:  # A/B < m/n < C/D
+            # q, s, n を候補としてチェック
+            min_q = min(min_q, q, s, n)
+            # 左右の子を両方探索
+            queue.append((p, q, m, n))
+            queue.append((m, n, r, s))
+    
+    return min_q
+
+# 入力処理
+T = int(input())
+for _ in range(T):
+    A, B, C, D = map(int, input().split())
+    result = find_min_q(A, B, C, D)
+    print(result)

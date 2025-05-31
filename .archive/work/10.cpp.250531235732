@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+bool check(ll q, ll A, ll B, ll C, ll D) {
+    __int128 aq = (__int128)A * q;
+    __int128 cq = (__int128)C * q;
+    ll left = (aq + B - 1) / B;  // ceil(A*q / B)
+    ll right = cq / D;           // floor(C*q / D)
+    return left < right;
+}
+
+ll solve(ll A, ll B, ll C, ll D) {
+    ll low = 1, high = 1e18;
+    while (low < high) {
+        ll mid = low + (high - low) / 2;
+        if (check(mid, A, B, C, D)) {
+            high = mid;
+        } else {
+            low = mid + 1;
+        }
+    }
+    return low;
+}
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        ll A, B, C, D;
+        cin >> A >> B >> C >> D;
+        cout << solve(A, B, C, D) << endl;
+    }
+    return 0;
+}

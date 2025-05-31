@@ -1,0 +1,76 @@
+template<class T,T(*op)(T,T),T(*e)()>
+struct swag_queue{
+	int n=0;
+	vector<T>r,sl{e()};
+	T sr=e();
+	int size(){return n;}
+	T prod(){return op(sl.back(),sr);}
+	void push(T x){
+		n++;
+		r.push_back(x);
+		sr=op(sr,x);
+	}
+	void pop(){
+		assert(n--);
+		sl.pop_back();
+		if(sl.size())return;
+		sl={sr=e()};
+		for(int i=0;i<n;i++){
+			sl.push_back(op(r.back(),sl.back()));
+			r.pop_back();
+		}
+		r.pop_back();
+	}
+};
+template<class T,T(*op)(T,T),T(*e)()>
+struct swag_deque{
+	int n=0;
+	vector<T>l,r,sl{e()},sr{e()};
+	int size(){return n;}
+	T prod(){return op(sl.back(),sr.back());}
+	void push_front(T x){
+		l.push_back(x);
+		sl.push_back(op(x,sl.back()));
+		n++;
+	}
+	void push_back(T x){
+		r.push_back(x);
+		sr.push_back(op(sr.back(),x));
+		n++;
+	}
+	void push(T x){return push_back(x);}
+	void recum(){
+		sl=sr={e()};
+		for(T x:l)sl.push_back(op(x,sl.back()));
+		for(T x:r)sr.push_back(op(sr.back(),x));
+	}
+	void pop_front(){
+		assert(n--);
+		sl.pop_back();
+		if(sl.size())return l.pop_back();
+		for(int i=0;i<n/2;i++){
+			l.push_back(r.back());
+			r.pop_back();
+		}
+		reverse(l.begin(),l.end());
+		reverse(r.begin(),r.end());
+		swap(l,r);
+		l.pop_back();
+		recum();
+	}
+	void pop_back(){
+		assert(n--);
+		sr.pop_back();
+		if(sr.size())return r.pop_back();
+		for(int i=0;i<n/2;i++){
+			r.push_back(l.back());
+			l.pop_back();
+		}
+		reverse(l.begin(),l.end());
+		reverse(r.begin(),r.end());
+		swap(l,r);
+		r.pop_back();
+		recum();
+	}
+	void pop(){pop_front();}
+};

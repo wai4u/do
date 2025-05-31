@@ -1,0 +1,24 @@
+template<class T,T(*op)(T,T),T(*e)()>
+struct swag_queue{
+	int n=0;
+	vector<T>r,sl{e()};
+	T sr=e();
+	int size(){return n;}
+	T prod(){return op(sl.back(),sr);}
+	void push(T x){
+		n++;
+		r.push_back(x);
+		sr=op(sr,x);
+	}
+	void pop(){
+		assert(n--);
+		sl.pop_back();
+		if(sl.size())return;
+		sl={sr=e()};
+		for(int i=0;i<n;i++){
+			sl.push_back(op(r.back(),sl.back()));
+			r.pop_back();
+		}
+		r.pop_back();
+	}
+};

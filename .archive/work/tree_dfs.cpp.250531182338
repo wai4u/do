@@ -1,0 +1,9 @@
+int N=5<<17;
+int L[N],R[N];
+vector<int>g[N];
+void dfs(int u,int p,int&k){
+	L[u]=k++;
+	for(int v:g[u])if(v!=p)dfs(v,u,k);
+	R[u]=k;
+}
+//https://judge.yosupo.jp/problem/vertex_add_subtree_sum

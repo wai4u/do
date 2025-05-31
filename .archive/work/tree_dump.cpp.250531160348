@@ -1,0 +1,85 @@
+//#include<bits/stdc++.h>
+//using namespace std;
+#include"io.hpp"
+int main(){
+	int n,q;
+	cin>>n>>q;
+	vector<vector<int>>g(n);
+	for(int i=0;i<n-1;i++){
+		int u,v;
+		cin>>u>>v;
+		g[u].push_back(v);
+		g[v].push_back(u);
+	}
+	vector<int>ord,pos(n),p(n,-1),dep(n),head(n),si(n,1),L(n),R(n);
+	head[0]=0;
+	auto dfs=[&](auto dfs,int u)->void{
+		if(g[0]==p)swap(g[0],g.back());
+		for(int&v:g[u])if(v!=p[u]){
+			p[v]=u;
+			dep[v]=dep[u]+1;
+			dfs(dfs,v);
+			si[u]+=si[v];
+			if(si[v]>si[g[u][0]])swap(v,g[u][0]);
+		}
+	};
+	dfs(dfs,0);
+	int k=0;
+	auto efs=[&](auto efs,int u)->void{
+		pos[u]=L[u]=k++;
+		ord.push_back(u);
+		int m=g[u].size();
+		for(int i=0;i<m;i++){
+			int v=g[u][i];
+			if(v==p[u])continue;
+			head[v]=i?v:head[u];
+			efs(efs,v);
+		}
+		R[u]=k;
+	};
+	efs(efs,0);
+	auto in_subtree=[&](int u,int v){//u<=subtree(v)
+		return L[v]<=L[u]&&L[u]<R[v];
+	};
+	auto LA=[&](int u,int k){
+		if(k>dep[u])return -1;
+		//assert(k<=dep[u]);
+		while(1){
+			int v=head[u];
+			int d=dep[u]-dep[v];
+			if(k<=d)return ord[pos[u]-k];
+			k-=d+1;
+			u=p[v];
+		}
+	};
+	auto lca=[&](int u,int v){
+		int a=head[u],b=head[v];
+		while(a!=b){
+			if(pos[a]<pos[b])v=p[b],b=head[v];
+			else u=p[a],a=head[u];
+		}
+		return pos[u]<pos[v]?u:v;
+	};
+	auto dist=[&](int u,int v){
+		int w=lca(u,v);
+		return dep[u]+dep[v]-2*dep[w];
+	};
+	auto jump=[&](int u,int v,int k){//u->v kth
+		int w=lca(u,v);
+		int du=dep[u]-dep[w];
+		int dv=dep[v]-dep[w];
+		if(k<=du)return LA(u,k);
+		k-=du;
+		//assert(k<=dv);
+		//return LCA(v,dv-k);
+		if(k<=dv)return LA(v,dv-k);
+		return -1;
+	};
+	while(q--){
+		int u,v,k;
+		cin>>u>>v>>k;
+		//cout<<lca(u,v)<<'\n';
+		cout<<jump(u,v,k)<<'\n';
+	}
+}
+//https://judge.yosupo.jp/submission/290006

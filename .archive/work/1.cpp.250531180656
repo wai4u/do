@@ -1,0 +1,18 @@
+#include"io.hpp"
+#include"hld.hpp"
+int main(){
+	int n,q;
+	cin>>n>>q;
+	HLD g(n);
+	for(int i=1;i<n;i++){
+		int p;
+		cin>>p;
+		g.add_edge(p,i);
+	}
+	g.build(0);
+	while(q--){
+		int u,v;
+		cin>>u>>v;
+		cout<<g.lca(u,v)<<'\n';
+	}
+}

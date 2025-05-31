@@ -1,0 +1,64 @@
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){
+	long a,b,c,d;
+	cin>>a>>b>>c>>d;
+	using T=__int128;
+	T A=a,B=b,C=c,D=d;
+	T p=0,q=1,r=1,s=0;
+	while(1){
+		T num=p+r,den=q+s;
+		int f,g;
+		//if(a/b<num/den)
+		if(a*den<b*num){
+			//左に行く
+			f=-1;
+		}else if(a*den==b*num){
+			f=0;
+		}else f=1;
+		if(c*den<d*num){
+			g=-1;
+		}else if(c*den==d*num){
+			g=0;
+		}else g=1;
+		assert(f<=g);
+		if(f==g){
+			if(f==-1){
+				r+=p;
+				s+=q;
+			}else if(f==1){
+				p+=r;
+				q+=s;
+			}
+			else assert(false);
+			continue;
+		}
+		if(f==-1){
+			if(g==1){
+				//cout<<q+s<<'\n';
+				cout<<long(q+s)<<'\n';
+				return;
+			}
+			if(g==0){
+				r+=p;
+				s+=q;
+				//cout<<q+s<<'\n';
+				cout<<long(q+s)<<'\n';
+				return;
+			}
+			assert(false);
+		}
+		if(f==0){
+			p+=r;
+			q+=s;
+			cout<<long(q+s)<<'\n';
+			return;
+		}
+		assert(false);
+	}
+}
+int main(){
+	int t;
+	cin>>t;
+	while(t--)solve();
+}
