@@ -1,5 +1,4 @@
 #include"io.hpp"
-//https://atcoder.jp/contests/abc407/submissions/66489578
 //https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/6/GRL_6_B
 //successive shortest path
 //https://hos.ac/slides/20150319_flow.pdf
@@ -16,12 +15,11 @@ struct MCF{
 	int n;
 	vector<vector<edge>>g;
 	bool neg;
-	vector<W>h,d;
+	vector<T>h,d;
 	vector<pair<int,int>>p;
 	W inf=numeric_limits<W>::max();
 	MCF(int n,bool neg=0):n(n),g(n),neg(neg){}
 	void add_edge(int u,int v,T c,W w){
-		assert(0<=u&&u<n&&0<=v&&v<n);
 		assert(c>=0);
 		if(!neg)assert(w>=0);
 		g[u].push_back({v,(int)g[v].size(),c,w});
@@ -40,7 +38,7 @@ struct MCF{
 			assert(t<n);
 		}
 	}
-	pair<T,W>flow(int s,int t,bool mincost=0,T in=numeric_limits<T>::max()){
+	pair<T,W>flow(int s,int t,T in=numeric_limits<T>::max()){
 		if(neg){
 			h.assign(n,inf),h[s]=0;
 			init_potential();
@@ -61,7 +59,7 @@ struct MCF{
 					i++;
 					if(!e.c)continue;
 					int v=e.to;
-					W dv=du+e.w+h[u]-h[v];
+					int dv=du+e.w+h[u]-h[v];
 					if(dv<d[v]){
 						d[v]=dv;
 						que.push(make_pair(dv,v));
@@ -70,9 +68,8 @@ struct MCF{
 				}
 			}
 			if(d[t]==inf)break;
-			for(int i=0;i<n;i++)if(d[i]<inf)h[i]+=d[i];
-			//for(int i=0;i<n;i++)h[i]+=d[i];//infになったら二度と使わないからoverflowしても良い
-			if(mincost&&h[t]>0)break;
+			//for(int i=0;i<n;i++)if(d[i]<inf)h[i]+=d[i];
+			for(int i=0;i<n;i++)h[i]+=d[i];//infになったら二度と使わないからoverflowしても良い
 			T f=in;
 			int u=t;
 			while(u!=s){
@@ -96,30 +93,14 @@ struct MCF{
 	}
 };
 int main(){
-	int h,w;
-	cin>>h>>w;
-	int N=h*w;
-	auto a=vector(h,vector(w,0l));
-	for(int i=0;i<h;i++)for(int j=0;j<w;j++)cin>>a[i][j];
-	long tot=0;
-	MCF<int,long>g(N+2,1);
-	int s=N,t=N+1;
-	int D[5]={0,1,0,-1,0};
-	for(int i=0;i<h;i++)for(int j=0;j<w;j++){
-		tot+=a[i][j];
-		int u=i*w+j;
-		if(i+j&1){
-			g.add_edge(u,t,1,0);
-			continue;
-		}
-		g.add_edge(s,u,1,0);
-		for(int k=0;k<4;k++){
-			int y=i+D[k],x=j+D[k+1];
-			if(0<=y&&y<h&&0<=x&&x<w){
-				int v=y*w+x;
-				g.add_edge(u,v,1,a[i][j]+a[y][x]);
-			}
-		}
+	int n,m,in;
+	cin>>n>>m>>in;
+	MCF<int,int>g(n);
+	for(int i=0;i<m;i++){
+		int u,v,c,w;
+		cin>>u>>v>>c>>w;
+		g.add_edge(u,v,c,w);
 	}
-	cout<<tot-g.flow(s,t,1).second<<'\n';
+	auto[f,c]=g.flow(0,n-1,in);
+	cout<<(f==in?c:-1)<<'\n';
 }
