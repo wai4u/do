@@ -1,8 +1,7 @@
-//template<class T,bool(*less)(T,T)>
 template<class T,bool MAX=0>
 struct cartesian_tree{
 	int n;
-	vector<int>p,l,r,L,R;//l,r:child,L,R:subtree_range[L[i],R[i])
+	vector<int>p,l,r,L,R;
 	vector<T>a,st;
 	cartesian_tree():n(0){}
 	template<class F>
@@ -32,7 +31,6 @@ struct cartesian_tree{
 		R.reserve(n);
 		for(int i=0;i<n;i++)push(f(i));
 	}
-	//bool f(int i,int j){return a[i]!=a[j]?less(a[i],a[j]):i<j;}
 	void push(T x){
 		a.push_back(x);
 		l.push_back(-1);
