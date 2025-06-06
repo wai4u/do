@@ -1,0 +1,90 @@
+struct HLD{
+	int n=0,m=0;
+	vector<vector<pair<int,int>>>g;
+	vector<int>ord,pos,p,dep,hd,sz,L,R,ve,ev;
+	HLD(int n):n(n),g(n){}
+	void add_edge(int u,int v,int id=-1){
+		if(id==-1)id=m;
+		g[u].push_back(make_pair(v,id));
+		g[v].push_back(make_pair(u,id));
+		m++;
+	}
+	void build(int r){
+		assert(m==n-1);
+		ord.clear();
+		pos.resize(n);
+		p.assign(n,-1);
+		dep.assign(n,0);
+		hd.assign(n,-1);
+		hd[r]=r;
+		sz.assign(n,1);
+		L.resize(n);
+		R.resize(n);
+		ev.resize(m);
+		ve.assign(n,-1);
+		dfs(r);
+		int k=0;
+		efs(r,k);
+	}
+	void dfs(int u){
+		if(g[u][0].first==p[u])swap(g[u][0],g[u].back());
+		for(auto&e:g[u])if(e.first!=p[u]){
+			auto&[v,id]=e;
+			p[v]=u;
+			ev[id]=v;
+			ve[v]=id;
+			dep[v]=dep[u]+1;
+			dfs(v);
+			sz[u]+=sz[v];
+			if(sz[v]>sz[g[u][0].first])swap(e,g[u][0]);
+		}
+	};
+	void efs(int u,int&k){
+		pos[u]=L[u]=k++;
+		ord.push_back(u);
+		bool used=0;
+		for(auto[v,_]:g[u])if(v!=p[u]){
+			hd[v]=used?v:hd[u];
+			used=1;
+			efs(v,k);
+		}
+		R[u]=k;
+	}
+	bool in_subtree(int u,int v){
+		//u<=subtree(v);
+		return L[v]<=L[u]&&L[u]<R[v];
+	}
+	int LA(int u,int k){
+		if(k>dep[u])return -1;
+		//assert(k<=dep[u]);
+		while(1){
+			int v=hd[u];
+			int d=L[u]-L[v];
+			if(k<=d)return ord[L[u]-k];
+			k-=d+1;
+			u=p[v];
+		}
+	}
+	int lca(int u,int v){
+		while(1){
+			if(L[u]>L[v])swap(u,v);
+			if(hd[u]==hd[v])return u;
+			v=p[hd[v]];
+		}
+	};
+	int dist(int u,int v){
+		int w=lca(u,v);
+		return dep[u]+dep[v]-2*dep[w];
+	};
+	int jump(int u,int v,int k){//u->v kth
+		int w=lca(u,v);
+		int du=dep[u]-dep[w];
+		int dv=dep[v]-dep[w];
+		if(k<=du)return LA(u,k);
+		k-=du;
+		//assert(k<=dv);
+		//return LCA(v,dv-k);
+		if(k<=dv)return LA(v,dv-k);
+		return -1;
+	};
+};
