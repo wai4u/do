@@ -1,4 +1,4 @@
-#pragma GCC optimize("Ofast,unroll-loops")
+#include"optimize.hpp"
 #include<bits/stdc++.h>
 using namespace std;
 namespace io{
