@@ -1,0 +1,55 @@
+//#include<bits/stdc++.h>
+//using namespace std;
+#include"io.hpp"
+#include<atcoder/dsu>
+int main(){
+	int n,q;
+	cin>>n>>q;
+	vector<int>x(n),y(n);
+	for(int i=0;i<n;i++)cin>>x[i]>>y[i];
+	atcoder::dsu uf(3000);
+	using T=tuple<long,int,int>;
+	priority_queue<T,vector<T>,greater<T>>que;
+	for(int i=0;i<n;i++)for(int j=0;j<i;j++){
+		que.push(make_tuple(abs(x[i]-x[j])+abs(y[i]-y[j]),i,j));
+	}
+	while(q--){
+		int op;
+		cin>>op;
+		if(op==1){
+			int a,b;
+			cin>>a>>b;
+			x.push_back(a);
+			y.push_back(b);
+			for(int i=0;i<n;i++){
+				que.push(make_tuple(abs(x[n]-x[i])+abs(y[n]-y[i]),n,i));
+			}
+			n++;
+		}
+		if(op==3){
+			int u,v;
+			cin>>u>>v;
+			cout<<(uf.same(u-1,v-1)?"Yes":"No")<<'\n';
+		}
+		if(op==2){
+			auto d0=-1;
+			while(que.size()){
+				auto[d,u,v]=que.top();
+				d0=d;
+				if(!uf.same(u,v))break;
+				que.pop();
+			}
+			if(que.empty()){
+				cout<<-1<<'\n';
+				continue;
+			}
+			cout<<d0<<'\n';
+			while(que.size()){
+				auto[d,u,v]=que.top();
+				if(d>d0)break;
+				uf.merge(u,v);
+				que.pop();
+			}
+		}
+	}
+}

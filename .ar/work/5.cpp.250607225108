@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+		int n;
+		string s;
+		cin>>n>>s;
+		string t="";
+		for(int i=0;i<n-1;i++){
+			if(s[i]>s[i+1]){
+				int j=i+1;
+				while(j<n&&s[j]<=s[i])j++;
+				for(int k=0;k<i;k++)t+=s[k];
+				for(int k=i+1;k<j;k++)t+=s[k];
+				t+=s[i];
+				for(int k=j;k<n;k++)t+=s[k];
+				//s.insert(n,s[i]);
+				//s.erase(i);
+				break;
+			}
+		}
+		if(t=="")t=s;
+		cout<<t<<'\n';
+		//cout<<s<<'\n';
+	}
+}

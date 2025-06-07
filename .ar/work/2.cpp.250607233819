@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+		int n;
+		string s;
+		cin>>n>>s;
+		int i=0;
+		while(i<n-1&&s[i]<=s[i+1])i++;
+		/*
+		if(i==n-1){
+			cout<<s<<'\n';
+			continue;
+		}
+		*/
+		int j=i+1;
+		while(j<n&&s[j]<=s[i])j++;
+		cout<<s.substr(0,i)+s.substr(i+1,j-i-1)+s[i]+s.substr(j,n-j)<<'\n';
+	}
+}
