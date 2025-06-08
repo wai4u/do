@@ -1,0 +1,6 @@
+export LANG=en_US.UTF-8
+export PS1='%~%# '
+bindkey "^p" history-beginning-search-backward
+z(){
+	zip ${1}_$(date +%y%m%d%H%M%S).zip -r $1
+}
