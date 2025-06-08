@@ -79,6 +79,9 @@ data:
       path: work/cp/io.hpp
       title: work/cp/io.hpp
     - icon: ':warning:'
+      path: work/cp/manacher.hpp
+      title: work/cp/manacher.hpp
+    - icon: ':warning:'
       path: work/cp/zalgo.hpp
       title: work/cp/zalgo.hpp
   - name: work/lib
@@ -95,6 +98,9 @@ data:
     - icon: ':warning:'
       path: work/lib/main_20250608_2.cpp
       title: work/lib/main_20250608_2.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/manacher_20250608_1.hpp
+      title: work/lib/manacher_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/optimize_20250608_1.hpp
       title: work/lib/optimize_20250608_1.hpp
@@ -113,6 +119,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1_1.test.cpp
       title: work/lib/io_20250608_1_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/manacher_20250608_1.test.cpp
+      title: work/lib/manacher_20250608_1.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.test.cpp
       title: work/lib/zalgo_20250608_1.test.cpp

@@ -2,18 +2,12 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: work/cp/io.hpp
-    title: work/cp/io.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
+    path: work/lib/manacher_20250608_1.hpp
+    title: work/lib/manacher_20250608_1.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
@@ -28,28 +22,23 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
-    \ no such header\n"
-  code: "#include\"io.hpp\"\ntemplate<class A>\nvector<int>manacher(const A&a,bool\
-    \ diam=0){\n\tint n=a.size();\n\tif(!n)return{};\n\tvector<int>D(n+n-1);\n\tfor(int\
-    \ i=1,c=0;i<n+n-2;i++){\n\t\tint k=i/2,j=i-k,r=c/2+D[c];\n\t\tint d=r<=k?0:min(r-k,D[c+c-i]);\n\
-    \t\twhile(j-d&&k+d+1<n&&a[j-d-1]==a[k+d+1])++d;\n\t\tD[i]=d;\n\t\tif(k+d>=r)c=i;\n\
-    \t}\n\tif(diam)for(int i=0;i<n+n-1;i++)D[i]+=D[i]+(~i&1);\n\treturn D;\n}\nint\
-    \ main(){\n\tstring s;\n\tcin>>s;\n\tcout<<manacher(s,1)<<'\\n';\n}\n"
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: manacher_20250608_1.hpp:\
+    \ line -1: no such header\n"
+  code: '#include"manacher_20250608_1.hpp"
+
+    '
   dependsOn:
-  - work/cp/io.hpp
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
+  - work/lib/manacher_20250608_1.hpp
   isVerificationFile: false
-  path: work/1.cpp
+  path: work/cp/manacher.hpp
   requiredBy: []
   timestamp: '2025-06-08 13:57:13+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/cp/manacher.hpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /library/work/cp/manacher.hpp
+- /library/work/cp/manacher.hpp.html
+title: work/cp/manacher.hpp
 ---
