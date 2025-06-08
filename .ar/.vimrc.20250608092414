@@ -6,4 +6,4 @@ noremap H 16h
 noremap L 16l
 noremap K 8k
 noremap J 8j
-set path+=/do/work/cp,/do/cp,/do/work/lib,/do/lib,/do
+set path+=/do/lib,/do
