@@ -1,8 +1,8 @@
 #include"io.hpp"
 //primal-dual
-//primal時のsum(i)と[i]での区間を半開に統一。
-//https://judge.yosupo.jp/submission/291766
-template<class T,bool dual=0>
+//internally 0-indexed
+//https://judge.yosupo.jp/submission/291764
+template<class T,bool dual=1>
 struct fenwick{
 	int n=0;
 	vector<T>d,s;
@@ -46,15 +46,14 @@ struct fenwick{
 		if(!built||!upd){built=0;return;}
 		while(i<n)s[i]+=x,i|=i+1;
 	}
-	template<class U=void>
-	enable_if_t<dual,U>add(int l,int r,T x,bool upd=1){
+	enable_if_t<dual>add(int l,int r,T x,bool upd=1){
 		assert(l<=r);
 		if(l<r)add(l,x,upd),add(r,-x,upd);
 	}
-	//primalではsum(a[:i))
+	//primalではsum(a[:i]) 閉区間!
 	T operator[](int i){
 		if constexpr(dual)assert(0<=i&&i<n);
-		else{assert(0<=i&&i<=n);i--;}
+		else assert(-1<=i&&i<n);//便宜上-1を含める
 		build();
 		T y{};
 		while(i>=0)y+=s[i],i&=i+1,i--;
@@ -66,9 +65,9 @@ struct fenwick{
 		if constexpr(!dual)return d[i];
 		else return(*this)[i];
 	}
-	//[0,i)
+	//[0,i) 開区間!
 	template<class U=T>
-	enable_if_t<!dual,U>sum(int i){return(*this)[i];}
+	enable_if_t<!dual,U>sum(int i){return(*this)[i-1];}
 	//[l,r)
 	template<class U=T>
 	enable_if_t<!dual,U>sum(int l,int r){
@@ -79,15 +78,17 @@ struct fenwick{
 int main(){
 	int n,q;
 	cin>>n>>q;
-	fenwick<long,0>s(n,[&](int i){
+	long cum=0;
+	fenwick<long,1>s(n,[&](int i){
 		int x;
 		cin>>x;
-		return x;
+		cum+=x;
+		return cum;
 	});
 	while(q--){
 		int t,i,j;
 		cin>>t>>i>>j;
 		if(t==0)s.add(i,j);
-		else cout<<s[j]-s[i]<<'\n';
+		else cout<<s[j-1]-(i==0?0:s[i-1])<<'\n';
 	}
 }

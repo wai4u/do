@@ -1,4 +1,3 @@
-#include"io.hpp"
 //primal-dual
 //primal時のsum(i)と[i]での区間を半開に統一。
 //https://judge.yosupo.jp/submission/291766
@@ -76,18 +75,3 @@ struct fenwick{
 		return l==r?T{}:sum(r)-sum(l);
 	}
 };
-int main(){
-	int n,q;
-	cin>>n>>q;
-	fenwick<long,0>s(n,[&](int i){
-		int x;
-		cin>>x;
-		return x;
-	});
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		if(t==0)s.add(i,j);
-		else cout<<s[j]-s[i]<<'\n';
-	}
-}
