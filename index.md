@@ -87,6 +87,9 @@ data:
   - name: work/lib
     pages:
     - icon: ':warning:'
+      path: work/lib/bits_20250608_1.hpp
+      title: work/lib/bits_20250608_1.hpp
+    - icon: ':warning:'
       path: work/lib/combination_20250608_1.hpp
       title: work/lib/combination_20250608_1.hpp
     - icon: ':heavy_check_mark:'
