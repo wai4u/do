@@ -1,4 +1,3 @@
-#include"io.hpp"
 //dual
 //https://judge.yosupo.jp/submission/291759
 //sequenceで初期化する場合は値配列を渡す(差分配列ではない)
@@ -57,20 +56,3 @@ struct fenwick{
 	}
 	T operator[](int i){return get(i);}
 };
-int main(){
-	int n,q;
-	cin>>n>>q;
-	long cum=0;
-	fenwick<long>s(n,[&](int i){
-		int x;
-		cin>>x;
-		cum+=x;
-		return cum;
-	});
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		if(t==0)s.add(i,j);
-		else cout<<s[j-1]-(i==0?0:s[i-1])<<'\n';
-	}
-}
