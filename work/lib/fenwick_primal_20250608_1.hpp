@@ -1,4 +1,3 @@
-#include"io.hpp"
 //primal
 //internally 1-indexed
 //https://judge.yosupo.jp/submission/291730
@@ -61,18 +60,3 @@ struct fenwick{
 	}
 	T sum(int l,int r){return sum(r)-sum(l);}
 };
-int main(){
-	int n,q;
-	cin>>n>>q;
-	fenwick<long>s(n,[&](int i){
-		int x;
-		cin>>x;
-		return x;
-	});
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		if(t==0)s.add(i,j);
-		else cout<<s.sum(i,j)<<'\n';
-	}
-}
