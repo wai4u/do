@@ -12,12 +12,3 @@ g(){
   g++ -O2 -o a $I -I$ROOT $@
   python3 $ROOT/ex.py $I $@|tee .generated>$ROOT/generated.cpp
 }
-t(){
-	cd $ROOT
-	oj-verify run -j 4
-	cd -
-}
-p(){
-	find . -type f -regex "./[0-9]+.*" -exec bash -ic 'a {}' \;-exec rm {} \;
-	echo {1..9}.cpp|xargs -n 1 cp lib/main_20250608_1.cpp
-}
