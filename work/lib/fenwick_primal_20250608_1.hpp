@@ -58,5 +58,8 @@ struct fenwick{
 		while(i>0)y+=s[i],i-=i&-i;
 		return y;
 	}
-	T sum(int l,int r){return sum(r)-sum(l);}
+	T sum(int l,int r){
+		assert(0<=l&&l<=r&&r<=n);
+		return sum(r)-sum(l);
+	}
 };
