@@ -12,7 +12,7 @@ vector<int>sa_naive(A a){
 	});
 	return p;
 }
-#include"pdqsort.hpp"
+#include"pdqsort_20250608_1.hpp"
 //doubling+argsort(pdqsort)
 template<class A>
 vector<int>sa_doubling(A a){
@@ -37,7 +37,7 @@ vector<int>sa_doubling(A a){
 		}
 	}
 }
-#include"arrops.hpp"
+#include"arrops_20250608_1.hpp"
 //doubling+argsort(counting)
 template<class A>
 vector<int>sa_doublecounting(A a){
