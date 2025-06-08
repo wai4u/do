@@ -119,6 +119,12 @@ data:
     - icon: ':warning:'
       path: work/lib/edmonds_karp_20250608_1.hpp
       title: work/lib/edmonds_karp_20250608_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_20250608_1.hpp
+      title: work/lib/fenwick_20250608_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_20250608_2.hpp
+      title: work/lib/fenwick_20250608_2.hpp
     - icon: ':warning:'
       path: work/lib/fenwick_multideg_20250608_1.hpp
       title: work/lib/fenwick_multideg_20250608_1.hpp
@@ -128,6 +134,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1.hpp
       title: work/lib/io_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/lazy_segtree_20250608_1.hpp
+      title: work/lib/lazy_segtree_20250608_1.hpp
     - icon: ':warning:'
       path: work/lib/lichao_tree_20250608_1.hpp
       title: work/lib/lichao_tree_20250608_1.hpp
@@ -188,6 +197,12 @@ data:
   verificationCategories:
   - name: work/lib
     pages:
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_20250608_1.test.cpp
+      title: work/lib/fenwick_20250608_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_20250608_2.test.cpp
+      title: work/lib/fenwick_20250608_2.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1_1.test.cpp
       title: work/lib/io_20250608_1_1.test.cpp
