@@ -1,21 +1,23 @@
 #include"io.hpp"
-template<class A>
-vector<int>manacher(const A&a,bool diam=0){
-	int n=a.size();
-	if(!n)return{};
-	vector<int>D(n+n-1);
-	for(int i=1,c=0;i<n+n-2;i++){
-		int k=i/2,j=i-k,r=c/2+D[c];
-		int d=r<=k?0:min(r-k,D[c+c-i]);
-		while(j-d&&k+d+1<n&&a[j-d-1]==a[k+d+1])++d;
-		D[i]=d;
-		if(k+d>=r)c=i;
+#define PROBLEM "https://judge.yosupo.jp/problem/majority_voting"
+//boyer moore
+//https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
+//https://judge.yosupo.jp/problem/majority_voting
+//過半数があればただ一つ見つかる。なければyは最後の更新後半数以上だったものというだけで意義はない。
+template<class T>
+pair<bool,T>majority_vote(const vector<T>&a){
+	T y;
+	int c=0;
+	for(T x:a){
+		if(!c)y=x,c=1;
+		else if(x==y)c++;
+		else c--;
 	}
-	if(diam)for(int i=0;i<n+n-1;i++)D[i]+=D[i]+(~i&1);
-	return D;
+	c=0;
+	for(T x:a)c+=x==y;
+	return{c+c>n,y};
 }
 int main(){
-	string s;
-	cin>>s;
-	cout<<manacher(s,1)<<'\n';
+	int n,q;
+	cin>>n>>q;
 }
