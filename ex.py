@@ -41,7 +41,7 @@ def dfs(p):
 			if c.exists():return c
 		return None
 	for l in clean(p.open().read()).split('\n'):
-		if re.match(r"#pragma\s+once",l):continue
+		if re.match(r"#pragma once",l) or re.match(r"#define PROBLEM.*",l):continue
 		c=get_dep(l)
 		if c is None:ls.append(l)
 		else:dfs(c)
