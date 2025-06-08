@@ -2,18 +2,12 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: work/cp/io.hpp
-    title: work/cp/io.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
+    path: work/lib/zalgo_20250608_1.hpp
+    title: work/lib/zalgo_20250608_1.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
@@ -28,26 +22,23 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
-    \ no such header\n"
-  code: "#include\"io.hpp\"\ntemplate<class A>\nvector<int>zalgo(A a){\n\tint n=a.size();\n\
-    \tvector<int>z(n);z[0]=n;\n\tfor(int i=1,l=1;i<n;i++){\n\t\tint r=l+z[l],d=r<=i?0:min(r-i,z[i-l]);\n\
-    \t\twhile(i+d<n&&a[d]==a[i+d])d++;\n\t\tz[i]=d;\n\t\tif(i+d>r)l=i;\n\t}\n\treturn\
-    \ z;\n}\nint main(){\n\tstring s;\n\tcin>>s;\n\tcout<<zalgo(s)<<'\\n';\n}\n"
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: zalgo_20250608_1.hpp:\
+    \ line -1: no such header\n"
+  code: '#include"zalgo_20250608_1.hpp"
+
+    '
   dependsOn:
-  - work/cp/io.hpp
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
+  - work/lib/zalgo_20250608_1.hpp
   isVerificationFile: false
-  path: work/1.cpp
+  path: work/cp/zalgo.hpp
   requiredBy: []
   timestamp: '2025-06-08 12:27:07+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/cp/zalgo.hpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /library/work/cp/zalgo.hpp
+- /library/work/cp/zalgo.hpp.html
+title: work/cp/zalgo.hpp
 ---

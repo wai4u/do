@@ -18,6 +18,15 @@ data:
   - icon: ':heavy_check_mark:'
     path: work/lib/io_20250608_1_1.test.cpp
     title: work/lib/io_20250608_1_1.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/zalgo_20250608_1.test.cpp
+    title: work/lib/zalgo_20250608_1.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/zalgo_20250608_2.test.cpp
+    title: work/lib/zalgo_20250608_2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/zalgo_20250608_3.test.cpp
+    title: work/lib/zalgo_20250608_3.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -51,6 +60,9 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - work/lib/io_20250608_1_1.test.cpp
+  - work/lib/zalgo_20250608_2.test.cpp
+  - work/lib/zalgo_20250608_3.test.cpp
+  - work/lib/zalgo_20250608_1.test.cpp
 documentation_of: work/cp/io.hpp
 layout: document
 redirect_from:

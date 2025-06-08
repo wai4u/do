@@ -78,6 +78,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/cp/io.hpp
       title: work/cp/io.hpp
+    - icon: ':warning:'
+      path: work/cp/zalgo.hpp
+      title: work/cp/zalgo.hpp
   - name: work/lib
     pages:
     - icon: ':warning:'
@@ -95,11 +98,29 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/optimize_20250608_1.hpp
       title: work/lib/optimize_20250608_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/zalgo_20250608_1.hpp
+      title: work/lib/zalgo_20250608_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/zalgo_20250608_2.hpp
+      title: work/lib/zalgo_20250608_2.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/zalgo_20250608_3.hpp
+      title: work/lib/zalgo_20250608_3.hpp
   verificationCategories:
   - name: work/lib
     pages:
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1_1.test.cpp
       title: work/lib/io_20250608_1_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/zalgo_20250608_1.test.cpp
+      title: work/lib/zalgo_20250608_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/zalgo_20250608_2.test.cpp
+      title: work/lib/zalgo_20250608_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/zalgo_20250608_3.test.cpp
+      title: work/lib/zalgo_20250608_3.test.cpp
 layout: toppage
 ---
