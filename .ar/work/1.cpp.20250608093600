@@ -1,6 +1,0 @@
-#include"io.hpp"
-#include<atcoder/segtree>
-//#pragma once
-#define PROBLEM "https://"
-int main(){
-}

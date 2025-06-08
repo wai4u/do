@@ -1,4 +1,0 @@
-#include"io.hpp"
-#include<atcoder/all>
-int main(){
-}
