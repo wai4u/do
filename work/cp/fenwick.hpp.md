@@ -1,25 +1,16 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
-    path: work/cp/fenwick.hpp
-    title: work/cp/fenwick.hpp
-  - icon: ':warning:'
-    path: work/cp/io.hpp
-    title: work/cp/io.hpp
   - icon: ':heavy_check_mark:'
     path: work/lib/fenwick_20250608_6.hpp
     title: work/lib/fenwick_20250608_6.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: work/1.cpp
+    title: work/1.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
@@ -34,28 +25,24 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
-    \ no such header\n"
-  code: "#include\"io.hpp\"\n#include\"fenwick.hpp\"\nint main(){\n\tint n,q;\n\t\
-    cin>>n>>q;\n\tfenwick<long>s(n);\n\tfor(int i=0;i<n;i++){\n\t\tint x;\n\t\tcin>>x;\n\
-    \t\ts.add(i,x);\n\t}\n\twhile(q--){\n\t\tint t,i,j;\n\t\tcin>>t>>i>>j;\n\t\tif(t==0)s.add(i,j);\n\
-    \t\telse cout<<s[j-1]-s[i-1]<<'\\n';\n\t}\n}\n"
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: fenwick_20250608_6.hpp:\
+    \ line -1: no such header\n"
+  code: '#include"fenwick_20250608_6.hpp"
+
+    '
   dependsOn:
-  - work/cp/io.hpp
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
-  - work/cp/fenwick.hpp
   - work/lib/fenwick_20250608_6.hpp
   isVerificationFile: false
-  path: work/1.cpp
-  requiredBy: []
+  path: work/cp/fenwick.hpp
+  requiredBy:
+  - work/1.cpp
   timestamp: '2025-06-09 00:20:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/cp/fenwick.hpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /library/work/cp/fenwick.hpp
+- /library/work/cp/fenwick.hpp.html
+title: work/cp/fenwick.hpp
 ---

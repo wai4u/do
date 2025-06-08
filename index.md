@@ -79,6 +79,9 @@ data:
       path: work/cp/combination.hpp
       title: work/cp/combination.hpp
     - icon: ':warning:'
+      path: work/cp/fenwick.hpp
+      title: work/cp/fenwick.hpp
+    - icon: ':warning:'
       path: work/cp/io.hpp
       title: work/cp/io.hpp
     - icon: ':warning:'
