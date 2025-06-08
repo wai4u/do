@@ -70,6 +70,9 @@ data:
     - icon: ':warning:'
       path: work/1.cpp
       title: work/1.cpp
+    - icon: ':warning:'
+      path: work/2.cpp
+      title: work/2.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -134,6 +137,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_primal_20250608_1.hpp
       title: work/lib/fenwick_primal_20250608_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_primal_20250608_2.hpp
+      title: work/lib/fenwick_primal_20250608_2.hpp
     - icon: ':warning:'
       path: work/lib/hld_20250608_1.hpp
       title: work/lib/hld_20250608_1.hpp
@@ -230,6 +236,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_primal_20250608_1_5.test.cpp
       title: work/lib/fenwick_primal_20250608_1_5.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_primal_20250608_2_1.test.cpp
+      title: work/lib/fenwick_primal_20250608_2_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_primal_20250608_2_2.test.cpp
+      title: work/lib/fenwick_primal_20250608_2_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_primal_20250608_2_3.test.cpp
+      title: work/lib/fenwick_primal_20250608_2_3.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1_1.test.cpp
       title: work/lib/io_20250608_1_1.test.cpp
