@@ -2,11 +2,13 @@
 //primal
 //initial fast build
 //https://judge.yosupo.jp/submission/291675
-template<class T>
+template<class T,bool dual=0>
 struct fenwick{
 	int n;vector<T>d;
-	fenwick(int n):n(n),d(n){}
-	template<class F>fenwick(int n,F f):fenwick(n){
+	bool build;
+	fenwick(int n){init(n);}
+	template<class F>fenwick(int n,F f){init(n,f);}
+	void build(){
 		for(int i=0;i<n;++i){
 			d[i]+=f(i);
 			int j=i|i+1;
