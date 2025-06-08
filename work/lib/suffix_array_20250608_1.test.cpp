@@ -1,4 +1,4 @@
-#include"io.hpp"
+#include"io_20250608_1.hpp"
 #define PROBLEM "https://judge.yosupo.jp/problem/suffixarray"
 #include"suffix_array_20250608_1.hpp"
 int main(){

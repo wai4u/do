@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
-#include"io.hpp"
+#include"io_20250608_1.hpp"
 #include"fenwick_primal_20250608_1.hpp"
 int main(){
 	int n,q;
