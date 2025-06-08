@@ -73,6 +73,9 @@ data:
   - name: work/cp
     pages:
     - icon: ':warning:'
+      path: work/cp/boyer_moore_majority_vote.hpp
+      title: work/cp/boyer_moore_majority_vote.hpp
+    - icon: ':warning:'
       path: work/cp/combination.hpp
       title: work/cp/combination.hpp
     - icon: ':heavy_check_mark:'
@@ -82,6 +85,9 @@ data:
       path: work/cp/manacher.hpp
       title: work/cp/manacher.hpp
     - icon: ':warning:'
+      path: work/cp/rng.hpp
+      title: work/cp/rng.hpp
+    - icon: ':warning:'
       path: work/cp/zalgo.hpp
       title: work/cp/zalgo.hpp
   - name: work/lib
@@ -89,6 +95,9 @@ data:
     - icon: ':warning:'
       path: work/lib/bits_20250608_1.hpp
       title: work/lib/bits_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/boyer_moore_majority_vote_20250608_1.hpp
+      title: work/lib/boyer_moore_majority_vote_20250608_1.hpp
     - icon: ':warning:'
       path: work/lib/combination_20250608_1.hpp
       title: work/lib/combination_20250608_1.hpp
@@ -107,6 +116,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/optimize_20250608_1.hpp
       title: work/lib/optimize_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/rng_20250608_1.hpp
+      title: work/lib/rng_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.hpp
       title: work/lib/zalgo_20250608_1.hpp

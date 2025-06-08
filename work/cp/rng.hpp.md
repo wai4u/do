@@ -1,29 +1,19 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: work/cp/io.hpp
-    title: work/cp/io.hpp
-  - icon: ':warning:'
-    path: work/cp/rng.hpp
-    title: work/cp/rng.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
   - icon: ':warning:'
     path: work/lib/rng_20250608_1.hpp
     title: work/lib/rng_20250608_1.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: work/1.cpp
+    title: work/1.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    links:
-    - https://judge.yosupo.jp/problem/majority_voting
+    links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
@@ -35,32 +25,24 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
-    \ no such header\n"
-  code: "#include\"io.hpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/majority_voting\"\
-    \n//#include\"boyer_moore_majority_vote.hpp\"\n#include\"rng.hpp\"\nint main(){\n\
-    \tint n;\n\tcin>>n;\n\tvector<int>a(n);\n\tfor(int i=0;i<n;i++)cin>>a[i];\n\t\
-    sort(a.begin(),a.end());\n\tfor(int i=0;i<n;i++){\n\t\tint d=abs(a[(i+1)%n]-a[i]);\n\
-    \t\tauto ok=[&](int m){\n\t\t\tint r=a[i]%m,c=0;\n\t\t\tfor(int i=0;i<n;i++)c+=a[i]%m==r;\n\
-    \t\t\treturn c+c>n;\n\t\t};\n\t\tfor(int x=3;x*x<=d;x++)if(d%x==0){\n\t\t\tif(ok(x)){cout<<x<<'\\\
-    n';return 0;}\n\t\t\twhile(d%x==0)d/=x;\n\t\t}\n\t\tif(d>2&&ok(d)){cout<<d<<'\\\
-    n';return 0;}\n\t}\n\tcout<<-1<<'\\n';\n}\n"
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: rng_20250608_1.hpp:\
+    \ line -1: no such header\n"
+  code: '#include"rng_20250608_1.hpp"
+
+    '
   dependsOn:
-  - work/cp/io.hpp
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
-  - work/cp/rng.hpp
   - work/lib/rng_20250608_1.hpp
   isVerificationFile: false
-  path: work/1.cpp
-  requiredBy: []
+  path: work/cp/rng.hpp
+  requiredBy:
+  - work/1.cpp
   timestamp: '2025-06-08 15:21:06+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/cp/rng.hpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /library/work/cp/rng.hpp
+- /library/work/cp/rng.hpp.html
+title: work/cp/rng.hpp
 ---
