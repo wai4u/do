@@ -95,11 +95,12 @@ data:
     \t\treturn a[i];\n\t}\n\t//operator[]\u306Fa[i]\u304Bs[i]\u304B\u66D6\u6627\u3060\
     \u304B\u3089\u3042\u3048\u3066\u3064\u3051\u306A\u3044\u3002\n\tT sum(int i){\n\
     \t\tassert(0<=i&&i<=n);\n\t\tbuild();\n\t\tT y{};\n\t\twhile(i>0)y+=s[i],i-=i&-i;\n\
-    \t\treturn y;\n\t}\n\tT sum(int l,int r){return sum(r)-sum(l);}\n};\n#line 4 \"\
-    work/lib/fenwick_primal_20250608_1_3.test.cpp\"\nint main(){\n\tint n,q;\n\tcin>>n>>q;\n\
-    \tfenwick<long>s(n);\n\tfor(int i=0;i<n;i++){\n\t\tint x;\n\t\tcin>>x;\n\t\ts.add(i,x);\n\
-    \t}\n\twhile(q--){\n\t\tint t,i,j;\n\t\tcin>>t>>i>>j;\n\t\tif(t==0)s.add(i,j);\n\
-    \t\telse cout<<s.sum(i,j)<<'\\n';\n\t}\n}\n"
+    \t\treturn y;\n\t}\n\tT sum(int l,int r){\n\t\tassert(0<=l&&l<=r&&r<=n);\n\t\t\
+    return sum(r)-sum(l);\n\t}\n};\n#line 4 \"work/lib/fenwick_primal_20250608_1_3.test.cpp\"\
+    \nint main(){\n\tint n,q;\n\tcin>>n>>q;\n\tfenwick<long>s(n);\n\tfor(int i=0;i<n;i++){\n\
+    \t\tint x;\n\t\tcin>>x;\n\t\ts.add(i,x);\n\t}\n\twhile(q--){\n\t\tint t,i,j;\n\
+    \t\tcin>>t>>i>>j;\n\t\tif(t==0)s.add(i,j);\n\t\telse cout<<s.sum(i,j)<<'\\n';\n\
+    \t}\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n\
     #include\"io_20250608_1.hpp\"\n#include\"fenwick_primal_20250608_1.hpp\"\nint\
     \ main(){\n\tint n,q;\n\tcin>>n>>q;\n\tfenwick<long>s(n);\n\tfor(int i=0;i<n;i++){\n\
@@ -113,7 +114,7 @@ data:
   isVerificationFile: true
   path: work/lib/fenwick_primal_20250608_1_3.test.cpp
   requiredBy: []
-  timestamp: '2025-06-08 19:32:17+09:00'
+  timestamp: '2025-06-08 19:42:56+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: work/lib/fenwick_primal_20250608_1_3.test.cpp

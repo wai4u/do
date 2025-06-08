@@ -45,7 +45,8 @@ data:
     \t\treturn a[i];\n\t}\n\t//operator[]\u306Fa[i]\u304Bs[i]\u304B\u66D6\u6627\u3060\
     \u304B\u3089\u3042\u3048\u3066\u3064\u3051\u306A\u3044\u3002\n\tT sum(int i){\n\
     \t\tassert(0<=i&&i<=n);\n\t\tbuild();\n\t\tT y{};\n\t\twhile(i>0)y+=s[i],i-=i&-i;\n\
-    \t\treturn y;\n\t}\n\tT sum(int l,int r){return sum(r)-sum(l);}\n};\n"
+    \t\treturn y;\n\t}\n\tT sum(int l,int r){\n\t\tassert(0<=l&&l<=r&&r<=n);\n\t\t\
+    return sum(r)-sum(l);\n\t}\n};\n"
   code: "//primal\n//internally 1-indexed\n//https://judge.yosupo.jp/submission/291730\n\
     template<class T>\nstruct fenwick{\n\tint n=0;\n\tvector<T>a,s;\n\tbool built=0;\n\
     \tfenwick(){}\n\tfenwick(int n){init(n);}\n\ttemplate<class F>fenwick(int n,F\
@@ -67,12 +68,13 @@ data:
     //operator[]\u306Fa[i]\u304Bs[i]\u304B\u66D6\u6627\u3060\u304B\u3089\u3042\u3048\
     \u3066\u3064\u3051\u306A\u3044\u3002\n\tT sum(int i){\n\t\tassert(0<=i&&i<=n);\n\
     \t\tbuild();\n\t\tT y{};\n\t\twhile(i>0)y+=s[i],i-=i&-i;\n\t\treturn y;\n\t}\n\
-    \tT sum(int l,int r){return sum(r)-sum(l);}\n};\n"
+    \tT sum(int l,int r){\n\t\tassert(0<=l&&l<=r&&r<=n);\n\t\treturn sum(r)-sum(l);\n\
+    \t}\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: work/lib/fenwick_primal_20250608_1.hpp
   requiredBy: []
-  timestamp: '2025-06-08 19:23:25+09:00'
+  timestamp: '2025-06-08 19:42:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - work/lib/fenwick_primal_20250608_1_5.test.cpp
