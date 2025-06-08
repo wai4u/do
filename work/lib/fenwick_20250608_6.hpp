@@ -1,7 +1,7 @@
 //primal-dual
 //fenwick_20250608_5.hpp で言及した通り、サイズ初期化以外の初期化手段を廃止
 //代わりにlazy buildをする
-//ただしadd時のbuild保留optionを廃止。initを読んだ後[i]を呼ぶまでの間だけO(1)addされる。
+//ただしadd時のbuild保留optionを廃止。initを呼んだ後[i]を呼ぶまでの間だけO(1)addされる。
 //https://judge.yosupo.jp/submission/291769
 template<class T>
 struct fenwick{
