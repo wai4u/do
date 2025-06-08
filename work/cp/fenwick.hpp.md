@@ -36,7 +36,7 @@ data:
   path: work/cp/fenwick.hpp
   requiredBy:
   - work/1.cpp
-  timestamp: '2025-06-09 00:20:42+09:00'
+  timestamp: '2025-06-09 00:24:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/cp/fenwick.hpp
