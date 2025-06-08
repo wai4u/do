@@ -1,29 +1,22 @@
 #include"io.hpp"
-//primal
-//initial fast build
-//https://judge.yosupo.jp/submission/291675
+//minimal
+//https://judge.yosupo.jp/submission/291674
 template<class T>
 struct fenwick{
 	int n;vector<T>d;
 	fenwick(int n):n(n),d(n){}
-	template<class F>fenwick(int n,F f):fenwick(n){
-		for(int i=0;i<n;++i){
-			d[i]+=f(i);
-			int j=i|i+1;
-			if(j<n)d[j]+=d[i];
-		}
-	}
 	void add(int i,T x){while(i<n)d[i]+=x,i|=i+1;}
 	T operator[](int i){T y{};while(i>=0)y+=d[i],i&=i+1,--i;return y;}
 };
 int main(){
 	int n,q;
 	cin>>n>>q;
-	fenwick<long>s(n,[&](int i){
+	fenwick<long>s(n);
+	for(int i=0;i<n;i++){
 		int x;
 		cin>>x;
-		return x;
-	});
+		s.add(i,x);
+	}
 	while(q--){
 		int t,i,j;
 		cin>>t>>i>>j;
