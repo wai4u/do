@@ -93,17 +93,44 @@ data:
   - name: work/lib
     pages:
     - icon: ':warning:'
+      path: work/lib/arrops_20250608_1.hpp
+      title: work/lib/arrops_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/bimatch_20250608_1.hpp
+      title: work/lib/bimatch_20250608_1.hpp
+    - icon: ':warning:'
       path: work/lib/bits_20250608_1.hpp
       title: work/lib/bits_20250608_1.hpp
     - icon: ':warning:'
       path: work/lib/boyer_moore_majority_vote_20250608_1.hpp
       title: work/lib/boyer_moore_majority_vote_20250608_1.hpp
     - icon: ':warning:'
+      path: work/lib/cartesian_tree_20250608_1.hpp
+      title: work/lib/cartesian_tree_20250608_1.hpp
+    - icon: ':warning:'
       path: work/lib/combination_20250608_1.hpp
       title: work/lib/combination_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/coord_comp_20250608_1.hpp
+      title: work/lib/coord_comp_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/edge_set_path_prod_20250608_1.hpp
+      title: work/lib/edge_set_path_prod_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/edmonds_karp_20250608_1.hpp
+      title: work/lib/edmonds_karp_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/fenwick_multideg_20250608_1.hpp
+      title: work/lib/fenwick_multideg_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/hld.hpp_20250608_1.hpp
+      title: work/lib/hld.hpp_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1.hpp
       title: work/lib/io_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/lichao_tree_20250608_1.hpp
+      title: work/lib/lichao_tree_20250608_1.hpp
     - icon: ':warning:'
       path: work/lib/main_20250608_1.cpp
       title: work/lib/main_20250608_1.cpp
@@ -113,12 +140,42 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/manacher_20250608_1.hpp
       title: work/lib/manacher_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/manacher_20250608_2.hpp
+      title: work/lib/manacher_20250608_2.hpp
+    - icon: ':warning:'
+      path: work/lib/maxflow_20250608_1.hpp
+      title: work/lib/maxflow_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/maxflow_dense_20250608_1.hpp
+      title: work/lib/maxflow_dense_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/mcf_ssp_bellmandijkstra_20250608_1.hpp
+      title: work/lib/mcf_ssp_bellmandijkstra_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/modpow.hpp_20250608_1.hpp
+      title: work/lib/modpow.hpp_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/nextcombits_20250608_1.hpp
+      title: work/lib/nextcombits_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/optimize_20250608_1.hpp
       title: work/lib/optimize_20250608_1.hpp
     - icon: ':warning:'
+      path: work/lib/pdqsort_20250608_1.hpp
+      title: work/lib/pdqsort_20250608_1.hpp
+    - icon: ':warning:'
       path: work/lib/rng_20250608_1.hpp
       title: work/lib/rng_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/sbt_20250608_1.hpp
+      title: work/lib/sbt_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/suffix_array_20250608_1.hpp
+      title: work/lib/suffix_array_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/swag_20250608_1.hpp
+      title: work/lib/swag_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.hpp
       title: work/lib/zalgo_20250608_1.hpp

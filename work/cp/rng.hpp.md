@@ -4,10 +4,7 @@ data:
   - icon: ':warning:'
     path: work/lib/rng_20250608_1.hpp
     title: work/lib/rng_20250608_1.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,8 +31,7 @@ data:
   - work/lib/rng_20250608_1.hpp
   isVerificationFile: false
   path: work/cp/rng.hpp
-  requiredBy:
-  - work/1.cpp
+  requiredBy: []
   timestamp: '2025-06-08 15:21:06+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

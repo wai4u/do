@@ -11,6 +11,9 @@ data:
   - icon: ':warning:'
     path: atcoder/segtree.hpp
     title: atcoder/segtree.hpp
+  - icon: ':warning:'
+    path: work/lib/edge_set_path_prod_20250608_1.hpp
+    title: work/lib/edge_set_path_prod_20250608_1.hpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -46,6 +49,7 @@ data:
   isVerificationFile: false
   path: atcoder/internal_bit.hpp
   requiredBy:
+  - work/lib/edge_set_path_prod_20250608_1.hpp
   - atcoder/segtree.hpp
   - atcoder/convolution.hpp
   - atcoder/lazysegtree.hpp

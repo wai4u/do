@@ -1,0 +1,31 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
+  _pathExtension: hpp
+  _verificationStatusIcon: ':warning:'
+  attributes:
+    links: []
+  bundledCode: "#line 1 \"work/lib/modpow.hpp_20250608_1.hpp\"\ntemplate<class X,class\
+    \ T,class M>\nX modpow(X x,T t,M m){\n\tx%=m;\n\tX y=1%m;\n\twhile(t){if(t&1)y=y*x%m;x=x*x%m,t>>=1;}\n\
+    \treturn y;\n}\ntemplate<class Y,class X,class T,class M>\nY modpow(X x,T t,M\
+    \ m){return modpow(Y(x),t,m);}\n"
+  code: "template<class X,class T,class M>\nX modpow(X x,T t,M m){\n\tx%=m;\n\tX y=1%m;\n\
+    \twhile(t){if(t&1)y=y*x%m;x=x*x%m,t>>=1;}\n\treturn y;\n}\ntemplate<class Y,class\
+    \ X,class T,class M>\nY modpow(X x,T t,M m){return modpow(Y(x),t,m);}\n"
+  dependsOn: []
+  isVerificationFile: false
+  path: work/lib/modpow.hpp_20250608_1.hpp
+  requiredBy: []
+  timestamp: '2025-06-08 16:23:35+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: work/lib/modpow.hpp_20250608_1.hpp
+layout: document
+redirect_from:
+- /library/work/lib/modpow.hpp_20250608_1.hpp
+- /library/work/lib/modpow.hpp_20250608_1.hpp.html
+title: work/lib/modpow.hpp_20250608_1.hpp
+---
