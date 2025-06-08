@@ -92,7 +92,7 @@ data:
       title: work/cp/zalgo.hpp
   - name: work/lib
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/arrops_20250608_1.hpp
       title: work/lib/arrops_20250608_1.hpp
     - icon: ':warning:'
@@ -129,8 +129,8 @@ data:
       path: work/lib/fenwick_multideg_20250608_1.hpp
       title: work/lib/fenwick_multideg_20250608_1.hpp
     - icon: ':warning:'
-      path: work/lib/hld.hpp_20250608_1.hpp
-      title: work/lib/hld.hpp_20250608_1.hpp
+      path: work/lib/hld_20250608_1.hpp
+      title: work/lib/hld_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1.hpp
       title: work/lib/io_20250608_1.hpp
@@ -162,15 +162,15 @@ data:
       path: work/lib/mcf_ssp_bellmandijkstra_20250608_1.hpp
       title: work/lib/mcf_ssp_bellmandijkstra_20250608_1.hpp
     - icon: ':warning:'
-      path: work/lib/modpow.hpp_20250608_1.hpp
-      title: work/lib/modpow.hpp_20250608_1.hpp
+      path: work/lib/modpow_20250608_1.hpp
+      title: work/lib/modpow_20250608_1.hpp
     - icon: ':warning:'
       path: work/lib/nextcombits_20250608_1.hpp
       title: work/lib/nextcombits_20250608_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/optimize_20250608_1.hpp
       title: work/lib/optimize_20250608_1.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/pdqsort_20250608_1.hpp
       title: work/lib/pdqsort_20250608_1.hpp
     - icon: ':warning:'
@@ -179,7 +179,7 @@ data:
     - icon: ':warning:'
       path: work/lib/sbt_20250608_1.hpp
       title: work/lib/sbt_20250608_1.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.hpp
       title: work/lib/suffix_array_20250608_1.hpp
     - icon: ':warning:'
@@ -209,6 +209,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/manacher_20250608_1.test.cpp
       title: work/lib/manacher_20250608_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/suffix_array_20250608_1.test.cpp
+      title: work/lib/suffix_array_20250608_1.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.test.cpp
       title: work/lib/zalgo_20250608_1.test.cpp

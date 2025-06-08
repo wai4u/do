@@ -5,19 +5,30 @@ data:
     path: work/cp/io.hpp
     title: work/cp/io.hpp
   - icon: ':heavy_check_mark:'
+    path: work/lib/arrops_20250608_1.hpp
+    title: work/lib/arrops_20250608_1.hpp
+  - icon: ':heavy_check_mark:'
     path: work/lib/io_20250608_1.hpp
     title: work/lib/io_20250608_1.hpp
   - icon: ':heavy_check_mark:'
     path: work/lib/optimize_20250608_1.hpp
     title: work/lib/optimize_20250608_1.hpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/pdqsort_20250608_1.hpp
+    title: work/lib/pdqsort_20250608_1.hpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/suffix_array_20250608_1.hpp
+    title: work/lib/suffix_array_20250608_1.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/suffixarray
     links:
-    - https://judge.yosupo.jp/submission/291675
+    - https://judge.yosupo.jp/problem/suffixarray
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
@@ -31,29 +42,26 @@ data:
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
     )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
     \ no such header\n"
-  code: "#include\"io.hpp\"\n//primal\n//initial fast build\n//https://judge.yosupo.jp/submission/291675\n\
-    template<class T,bool dual=0>\nstruct fenwick{\n\tint n;vector<T>d;\n\tbool build;\n\
-    \tfenwick(int n){init(n);}\n\ttemplate<class F>fenwick(int n,F f){init(n,f);}\n\
-    \tvoid build(){\n\t\tfor(int i=0;i<n;++i){\n\t\t\td[i]+=f(i);\n\t\t\tint j=i|i+1;\n\
-    \t\t\tif(j<n)d[j]+=d[i];\n\t\t}\n\t}\n\tvoid add(int i,T x){while(i<n)d[i]+=x,i|=i+1;}\n\
-    \tT operator[](int i){T y{};while(i>=0)y+=d[i],i&=i+1,--i;return y;}\n};\nint\
-    \ main(){\n\tint n,q;\n\tcin>>n>>q;\n\tfenwick<long>s(n,[&](int i){\n\t\tint x;\n\
-    \t\tcin>>x;\n\t\treturn x;\n\t});\n\twhile(q--){\n\t\tint t,i,j;\n\t\tcin>>t>>i>>j;\n\
-    \t\tif(t==0)s.add(i,j);\n\t\telse cout<<s[j-1]-s[i-1]<<'\\n';\n\t}\n}\n"
+  code: "#include\"io.hpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/suffixarray\"\
+    \n#include\"suffix_array_20250608_1.hpp\"\nint main(){\n\tstring s;\n\tcin>>s;\n\
+    \tcout<<suffix_array(s)<<'\\n';\n}\n"
   dependsOn:
   - work/cp/io.hpp
   - work/lib/io_20250608_1.hpp
   - work/lib/optimize_20250608_1.hpp
-  isVerificationFile: false
-  path: work/1.cpp
+  - work/lib/suffix_array_20250608_1.hpp
+  - work/lib/pdqsort_20250608_1.hpp
+  - work/lib/arrops_20250608_1.hpp
+  isVerificationFile: true
+  path: work/lib/suffix_array_20250608_1.test.cpp
   requiredBy: []
   timestamp: '2025-06-08 18:40:38+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/lib/suffix_array_20250608_1.test.cpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /verify/work/lib/suffix_array_20250608_1.test.cpp
+- /verify/work/lib/suffix_array_20250608_1.test.cpp.html
+title: work/lib/suffix_array_20250608_1.test.cpp
 ---

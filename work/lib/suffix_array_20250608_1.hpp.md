@@ -1,17 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: work/lib/arrops_20250608_1.hpp
     title: work/lib/arrops_20250608_1.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: work/lib/pdqsort_20250608_1.hpp
     title: work/lib/pdqsort_20250608_1.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: work/lib/suffix_array_20250608_1.test.cpp
+    title: work/lib/suffix_array_20250608_1.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"work/lib/suffix_array_20250608_1.hpp\"\ntemplate<class A>\n\
@@ -311,8 +314,9 @@ data:
   path: work/lib/suffix_array_20250608_1.hpp
   requiredBy: []
   timestamp: '2025-06-08 16:23:35+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - work/lib/suffix_array_20250608_1.test.cpp
 documentation_of: work/lib/suffix_array_20250608_1.hpp
 layout: document
 redirect_from:
