@@ -18,6 +18,7 @@ struct fenwick{
 	}
 	T operator[](int i){
 		assert(i<n);
+		build();
 		T y=e();
 		while(i>=0)y=op(y,d[i]),i&=i+1,i--;
 		return y;
