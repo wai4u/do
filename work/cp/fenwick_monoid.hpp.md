@@ -36,7 +36,7 @@ data:
   path: work/cp/fenwick_monoid.hpp
   requiredBy:
   - work/7.cpp
-  timestamp: '2025-06-09 22:16:32+09:00'
+  timestamp: '2025-06-09 22:24:41+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/cp/fenwick_monoid.hpp
