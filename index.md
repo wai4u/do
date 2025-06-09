@@ -82,6 +82,9 @@ data:
       path: work/cp/fenwick.hpp
       title: work/cp/fenwick.hpp
     - icon: ':warning:'
+      path: work/cp/fenwick_bitset.hpp
+      title: work/cp/fenwick_bitset.hpp
+    - icon: ':warning:'
       path: work/cp/io.hpp
       title: work/cp/io.hpp
     - icon: ':warning:'
@@ -146,6 +149,9 @@ data:
     - icon: ':warning:'
       path: work/lib/fenwick_20250609_1.hpp
       title: work/lib/fenwick_20250609_1.hpp
+    - icon: ':warning:'
+      path: work/lib/fenwick_bitset_20250609_1.hpp
+      title: work/lib/fenwick_bitset_20250609_1.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_dual_20250608_1.hpp
       title: work/lib/fenwick_dual_20250608_1.hpp

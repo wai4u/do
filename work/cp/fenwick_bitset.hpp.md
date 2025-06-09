@@ -2,27 +2,18 @@
 data:
   _extendedDependsOn:
   - icon: ':warning:'
-    path: work/cp/fenwick_bitset.hpp
-    title: work/cp/fenwick_bitset.hpp
-  - icon: ':warning:'
-    path: work/cp/io.hpp
-    title: work/cp/io.hpp
-  - icon: ':warning:'
     path: work/lib/fenwick_20250609_1.hpp
     title: work/lib/fenwick_20250609_1.hpp
   - icon: ':warning:'
     path: work/lib/fenwick_bitset_20250609_1.hpp
     title: work/lib/fenwick_bitset_20250609_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: work/1.cpp
+    title: work/1.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
@@ -37,29 +28,25 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
-    \ no such header\n"
-  code: "#include\"io.hpp\"\n#include\"fenwick_bitset.hpp\"\nint main(){\n\tint q;\n\
-    \tcin>>q;\n\tint k=3e6;\n\tfenwick_bitset s(k);\n\tfor(int i=1;i<k;i++)s.set(i);\n\
-    \twhile(q--){\n\t\tint a,b;\n\t\tcin>>a>>b;\n\t\tif(a<k&&s[a]){\n\t\t\tfor(int\
-    \ i=a;i<k;i+=a)s.unset(i);\n\t\t}\n\t\tcout<<s.kth(b-1)<<'\\n';\n\t}\n}\n"
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: fenwick_bitset_20250609_1.hpp:\
+    \ line -1: no such header\n"
+  code: '#include"fenwick_bitset_20250609_1.hpp"
+
+    '
   dependsOn:
-  - work/cp/io.hpp
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
-  - work/cp/fenwick_bitset.hpp
   - work/lib/fenwick_bitset_20250609_1.hpp
   - work/lib/fenwick_20250609_1.hpp
   isVerificationFile: false
-  path: work/1.cpp
-  requiredBy: []
+  path: work/cp/fenwick_bitset.hpp
+  requiredBy:
+  - work/1.cpp
   timestamp: '2025-06-09 19:07:01+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/cp/fenwick_bitset.hpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /library/work/cp/fenwick_bitset.hpp
+- /library/work/cp/fenwick_bitset.hpp.html
+title: work/cp/fenwick_bitset.hpp
 ---

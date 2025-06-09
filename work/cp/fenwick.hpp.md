@@ -1,9 +1,9 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: work/lib/fenwick_20250608_6.hpp
-    title: work/lib/fenwick_20250608_6.hpp
+  - icon: ':warning:'
+    path: work/lib/fenwick_20250609_1.hpp
+    title: work/lib/fenwick_20250609_1.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -22,17 +22,17 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.3/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: fenwick_20250608_6.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: fenwick_20250609_1.hpp:\
     \ line -1: no such header\n"
-  code: '#include"fenwick_20250608_6.hpp"
+  code: '#include"fenwick_20250609_1.hpp"
 
     '
   dependsOn:
-  - work/lib/fenwick_20250608_6.hpp
+  - work/lib/fenwick_20250609_1.hpp
   isVerificationFile: false
   path: work/cp/fenwick.hpp
   requiredBy: []
-  timestamp: '2025-06-09 00:24:34+09:00'
+  timestamp: '2025-06-09 19:07:01+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/cp/fenwick.hpp
