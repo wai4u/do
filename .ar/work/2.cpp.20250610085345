@@ -1,0 +1,11 @@
+#include"io.hpp"
+int main(){
+	string s,t;
+	cin>>s>>t;
+	int i=0;
+	for(int j=0;j<s.size();j++){
+		if(i==t.size())break;
+		if(s[j]==(t[i]^32))i++;
+	}
+	cout<<(i==t.size()||i==t.size()-1&&t[i]=='X'?"Yes":"No")<<'\n';
+}

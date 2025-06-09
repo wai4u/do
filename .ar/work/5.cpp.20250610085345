@@ -1,0 +1,25 @@
+#include"io.hpp"
+int main(){
+	int n;
+	cin>>n;
+	int b=-2;
+	if(!n){
+		cout<<0<<'\n';
+		return 0;
+	}
+	vector<int>res;
+	while(n){
+		int q=n/b;
+		int r=n-q*b;
+		assert(q*b+r==n);
+		n=q;
+		if(r<0){
+			if(b<0)r-=b,n++;
+			else r+=b,n--;
+		}
+		res.push_back(r);
+	}
+	reverse(res.begin(),res.end());
+	for(int i:res)cout<<i;
+	cout<<'\n';
+}
