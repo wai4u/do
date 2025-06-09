@@ -3,9 +3,6 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/7.cpp
-    title: work/7.cpp
-  - icon: ':warning:'
     path: work/cp/fenwick_monoid.hpp
     title: work/cp/fenwick_monoid.hpp
   _extendedVerifiedWith: []
@@ -36,7 +33,6 @@ data:
   path: work/lib/fenwick_monoid_20250609_1.hpp
   requiredBy:
   - work/cp/fenwick_monoid.hpp
-  - work/7.cpp
   timestamp: '2025-06-09 22:24:41+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

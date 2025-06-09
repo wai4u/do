@@ -4,10 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: work/lib/union_find_20250609_4.hpp
     title: work/lib/union_find_20250609_4.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/3.cpp
-    title: work/3.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,8 +31,7 @@ data:
   - work/lib/union_find_20250609_4.hpp
   isVerificationFile: false
   path: work/cp/union_find.hpp
-  requiredBy:
-  - work/3.cpp
+  requiredBy: []
   timestamp: '2025-06-09 15:22:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

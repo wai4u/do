@@ -4,10 +4,7 @@ data:
   - icon: ':warning:'
     path: work/lib/coord_comp_20250609_2.hpp
     title: work/lib/coord_comp_20250609_2.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/6.cpp
-    title: work/6.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,8 +31,7 @@ data:
   - work/lib/coord_comp_20250609_2.hpp
   isVerificationFile: false
   path: work/cp/coord_comp.hpp
-  requiredBy:
-  - work/6.cpp
+  requiredBy: []
   timestamp: '2025-06-09 22:16:32+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
