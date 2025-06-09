@@ -1,0 +1,28 @@
+#include"io.hpp"
+#include<atcoder/lazysegtree>
+#include<atcoder/modint>
+using mint=atcoder::modint998244353;
+mint ten[2<<17],one[2<<17];
+struct X{
+	mint s=0;
+	int c=0;
+};
+X e(){return X{};}
+X op(X x,X y){return X{x.s*ten[y.c]+y.s,x.c+y.c};}
+X mapping(int f,X x){return f==-1?x:X{f*one[x.c],x.c};}
+int composition(int f,int g){return f==-1?g:f;}
+int id(){return -1;}
+int main(){
+	int n,q;
+	cin>>n>>q;
+	ten[0]=1;
+	for(int i=1;i<=n;i++)ten[i]=ten[i-1]*10,one[i]=one[i-1]*10+1;
+	atcoder::lazy_segtree<X,op,e,int,mapping,composition,id>seg(vector(n,X{1,1}));
+	while(q--){
+		int l,r,d;
+		cin>>l>>r>>d;
+		l--;
+		seg.apply(l,r,d);
+		cout<<seg.all_prod().s.val()<<'\n';
+	}
+}

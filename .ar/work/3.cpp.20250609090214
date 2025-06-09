@@ -1,0 +1,19 @@
+#include"io.hpp"
+int main(){
+	int n,q;
+	cin>>n>>q;
+	string s;
+	cin>>s;
+	int p=0;
+	while(q--){
+		int t,x;
+		cin>>t>>x;
+		if(t==1){
+			p-=x;
+			if(p<0)p+=n;
+		}else{
+			x--;
+			cout<<s[(p+x)%n]<<'\n';
+		}
+	}
+}
