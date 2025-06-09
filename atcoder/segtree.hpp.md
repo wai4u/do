@@ -6,6 +6,12 @@ data:
     title: atcoder/internal_bit.hpp
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: work/5.cpp
+    title: work/5.cpp
+  - icon: ':warning:'
+    path: work/6.cpp
+    title: work/6.cpp
+  - icon: ':warning:'
     path: work/lib/edge_set_path_prod_20250608_1.hpp
     title: work/lib/edge_set_path_prod_20250608_1.hpp
   _extendedVerifiedWith: []
@@ -121,6 +127,8 @@ data:
   isVerificationFile: false
   path: atcoder/segtree.hpp
   requiredBy:
+  - work/6.cpp
+  - work/5.cpp
   - work/lib/edge_set_path_prod_20250608_1.hpp
   timestamp: '2025-06-06 20:31:38+09:00'
   verificationStatus: LIBRARY_NO_TESTS

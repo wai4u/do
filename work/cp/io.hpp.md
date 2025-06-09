@@ -12,6 +12,30 @@ data:
     path: work/1.cpp
     title: work/1.cpp
   - icon: ':warning:'
+    path: work/2.cpp
+    title: work/2.cpp
+  - icon: ':warning:'
+    path: work/3.cpp
+    title: work/3.cpp
+  - icon: ':warning:'
+    path: work/4.cpp
+    title: work/4.cpp
+  - icon: ':warning:'
+    path: work/5.cpp
+    title: work/5.cpp
+  - icon: ':warning:'
+    path: work/6.cpp
+    title: work/6.cpp
+  - icon: ':warning:'
+    path: work/7.cpp
+    title: work/7.cpp
+  - icon: ':warning:'
+    path: work/8.cpp
+    title: work/8.cpp
+  - icon: ':warning:'
+    path: work/9.cpp
+    title: work/9.cpp
+  - icon: ':warning:'
     path: work/lib/main_20250608_1.cpp
     title: work/lib/main_20250608_1.cpp
   _extendedVerifiedWith: []
@@ -42,8 +66,16 @@ data:
   isVerificationFile: false
   path: work/cp/io.hpp
   requiredBy:
+  - work/4.cpp
+  - work/6.cpp
+  - work/3.cpp
+  - work/2.cpp
+  - work/7.cpp
   - work/1.cpp
+  - work/8.cpp
+  - work/5.cpp
   - work/lib/main_20250608_1.cpp
+  - work/9.cpp
   timestamp: '2025-06-08 09:29:55+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

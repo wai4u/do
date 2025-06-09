@@ -70,6 +70,30 @@ data:
     - icon: ':warning:'
       path: work/1.cpp
       title: work/1.cpp
+    - icon: ':warning:'
+      path: work/2.cpp
+      title: work/2.cpp
+    - icon: ':warning:'
+      path: work/3.cpp
+      title: work/3.cpp
+    - icon: ':warning:'
+      path: work/4.cpp
+      title: work/4.cpp
+    - icon: ':warning:'
+      path: work/5.cpp
+      title: work/5.cpp
+    - icon: ':warning:'
+      path: work/6.cpp
+      title: work/6.cpp
+    - icon: ':warning:'
+      path: work/7.cpp
+      title: work/7.cpp
+    - icon: ':warning:'
+      path: work/8.cpp
+      title: work/8.cpp
+    - icon: ':warning:'
+      path: work/9.cpp
+      title: work/9.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -79,11 +103,17 @@ data:
       path: work/cp/combination.hpp
       title: work/cp/combination.hpp
     - icon: ':warning:'
+      path: work/cp/coord_comp.hpp
+      title: work/cp/coord_comp.hpp
+    - icon: ':warning:'
       path: work/cp/fenwick.hpp
       title: work/cp/fenwick.hpp
     - icon: ':warning:'
       path: work/cp/fenwick_bitset.hpp
       title: work/cp/fenwick_bitset.hpp
+    - icon: ':warning:'
+      path: work/cp/fenwick_monoid.hpp
+      title: work/cp/fenwick_monoid.hpp
     - icon: ':warning:'
       path: work/cp/io.hpp
       title: work/cp/io.hpp
@@ -123,6 +153,12 @@ data:
       path: work/lib/coord_comp_20250608_1.hpp
       title: work/lib/coord_comp_20250608_1.hpp
     - icon: ':warning:'
+      path: work/lib/coord_comp_20250609_1.hpp
+      title: work/lib/coord_comp_20250609_1.hpp
+    - icon: ':warning:'
+      path: work/lib/coord_comp_20250609_2.hpp
+      title: work/lib/coord_comp_20250609_2.hpp
+    - icon: ':warning:'
       path: work/lib/edge_set_path_prod_20250608_1.hpp
       title: work/lib/edge_set_path_prod_20250608_1.hpp
     - icon: ':warning:'
@@ -161,6 +197,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_dual_20250608_1.hpp
       title: work/lib/fenwick_dual_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/fenwick_monoid_20250609_1.hpp
+      title: work/lib/fenwick_monoid_20250609_1.hpp
     - icon: ':warning:'
       path: work/lib/fenwick_multideg_20250608_1.hpp
       title: work/lib/fenwick_multideg_20250608_1.hpp
