@@ -6,9 +6,6 @@ data:
     title: work/lib/fenwick_20250609_1.hpp
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
-  - icon: ':warning:'
     path: work/cp/fenwick_bitset.hpp
     title: work/cp/fenwick_bitset.hpp
   _extendedVerifiedWith: []
@@ -73,7 +70,6 @@ data:
   path: work/lib/fenwick_bitset_20250609_1.hpp
   requiredBy:
   - work/cp/fenwick_bitset.hpp
-  - work/1.cpp
   timestamp: '2025-06-09 19:07:01+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
