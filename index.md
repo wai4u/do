@@ -65,6 +65,11 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
+  - name: work
+    pages:
+    - icon: ':warning:'
+      path: work/1.cpp
+      title: work/1.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -205,11 +210,14 @@ data:
       path: work/lib/swag_20250608_1.hpp
       title: work/lib/swag_20250608_1.hpp
     - icon: ':warning:'
-      path: work/lib/union_find_20250608_1.hpp
-      title: work/lib/union_find_20250608_1.hpp
+      path: work/lib/union_find_20250609_1.hpp
+      title: work/lib/union_find_20250609_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/union_find_20250609_2.hpp
+      title: work/lib/union_find_20250609_2.hpp
     - icon: ':warning:'
-      path: work/lib/union_find_20250608_2.hpp
-      title: work/lib/union_find_20250608_2.hpp
+      path: work/lib/union_find_20250609_3.hpp
+      title: work/lib/union_find_20250609_3.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.hpp
       title: work/lib/zalgo_20250608_1.hpp
@@ -282,6 +290,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.test.cpp
       title: work/lib/suffix_array_20250608_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/union_find_20250609_2.test.cpp
+      title: work/lib/union_find_20250609_2.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.test.cpp
       title: work/lib/zalgo_20250608_1.test.cpp
