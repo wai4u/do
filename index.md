@@ -65,11 +65,6 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
-  - name: work
-    pages:
-    - icon: ':warning:'
-      path: work/9.cpp
-      title: work/9.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -137,6 +132,9 @@ data:
     - icon: ':warning:'
       path: work/lib/edge_set_path_prod_20250608_1.hpp
       title: work/lib/edge_set_path_prod_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/edge_set_path_prod_20250609_1.hpp
+      title: work/lib/edge_set_path_prod_20250609_1.hpp
     - icon: ':warning:'
       path: work/lib/edmonds_karp_20250608_1.hpp
       title: work/lib/edmonds_karp_20250608_1.hpp
