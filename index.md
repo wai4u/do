@@ -65,11 +65,6 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
-  - name: work
-    pages:
-    - icon: ':warning:'
-      path: work/1.cpp
-      title: work/1.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -209,6 +204,12 @@ data:
     - icon: ':warning:'
       path: work/lib/swag_20250608_1.hpp
       title: work/lib/swag_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/union_find_20250608_1.hpp
+      title: work/lib/union_find_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/union_find_20250608_2.hpp
+      title: work/lib/union_find_20250608_2.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.hpp
       title: work/lib/zalgo_20250608_1.hpp
