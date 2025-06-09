@@ -65,6 +65,14 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
+  - name: work
+    pages:
+    - icon: ':warning:'
+      path: work/8.cpp
+      title: work/8.cpp
+    - icon: ':warning:'
+      path: work/9.cpp
+      title: work/9.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -106,6 +114,9 @@ data:
       path: work/lib/arrops_20250608_1.hpp
       title: work/lib/arrops_20250608_1.hpp
     - icon: ':warning:'
+      path: work/lib/baseconv_20250609_1.hpp
+      title: work/lib/baseconv_20250609_1.hpp
+    - icon: ':warning:'
       path: work/lib/bimatch_20250608_1.hpp
       title: work/lib/bimatch_20250608_1.hpp
     - icon: ':warning:'
@@ -129,6 +140,9 @@ data:
     - icon: ':warning:'
       path: work/lib/coord_comp_20250609_2.hpp
       title: work/lib/coord_comp_20250609_2.hpp
+    - icon: ':warning:'
+      path: work/lib/divisors_20250609_1.hpp
+      title: work/lib/divisors_20250609_1.hpp
     - icon: ':warning:'
       path: work/lib/edge_set_path_prod_20250608_1.hpp
       title: work/lib/edge_set_path_prod_20250608_1.hpp
