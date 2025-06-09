@@ -1,4 +1,3 @@
-#include"io.hpp"
 //https://judge.yosupo.jp/submission/291835
 struct union_find{
 	vector<int>r,s;
@@ -23,14 +22,3 @@ struct union_find{
 		return 1;
 	}
 };
-int main(){
-	int n,q;
-	cin>>n>>q;
-	union_find uf(n);
-	while(q--){
-		int t,u,v;
-		cin>>t>>u>>v;
-		if(t==0)uf.unite(u,v);
-		else cout<<uf.same(u,v)<<'\n';
-	}
-}

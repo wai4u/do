@@ -1,25 +1,24 @@
 #include"io.hpp"
-//https://judge.yosupo.jp/submission/291835
+//https://judge.yosupo.jp/submission/291834
 struct union_find{
-	vector<int>r,s;
+	vector<int>d;
 	union_find(){}
 	union_find(int n){init(n);}
-	void init(int n){
-		r.resize(n);
-		s.assign(n,-1);
-		for(int i=0;i<n;i++)r[i]=i;
-	}
+	void init(int n){d.assign(n,-1);}
 	int root(int u){
-		while(u!=r[u])u=r[u]=r[r[u]];
+		while(d[u]>=0){
+			if(d[d[u]]<0)return d[u];
+			u=d[u]=d[d[u]];
+		}
 		return u;
 	}
 	bool same(int u,int v){return root(u)==root(v);}
-	int size(int u){return s[root(u)];}
+	int size(int u){return -d[root(u)];}
 	bool unite(int u,int v){
 		u=root(u),v=root(v);
 		if(u==v)return 0;
-		if(s[u]>s[v])swap(u,v);
-		s[v]+=s[u],r[u]=v;
+		if(d[u]<d[v])swap(u,v);
+		d[v]+=d[u],d[u]=v;
 		return 1;
 	}
 };
