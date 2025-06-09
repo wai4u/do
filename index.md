@@ -91,6 +91,9 @@ data:
       path: work/cp/rng.hpp
       title: work/cp/rng.hpp
     - icon: ':warning:'
+      path: work/cp/union_find.hpp
+      title: work/cp/union_find.hpp
+    - icon: ':warning:'
       path: work/cp/zalgo.hpp
       title: work/cp/zalgo.hpp
   - name: work/lib
