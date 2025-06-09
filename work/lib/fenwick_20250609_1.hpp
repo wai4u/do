@@ -1,3 +1,4 @@
+#pragma once
 //https://atcoder.jp/contests/arc197/submissions/66622201
 template<class T>
 struct fenwick{
