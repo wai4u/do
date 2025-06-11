@@ -1,0 +1,28 @@
+#include"io.hpp"
+#include<atcoder/modint>
+using mint=atcoder::modint998244353;
+int main(){
+	int q;
+	cin>>q;
+	mint v=1;
+	int l=1;
+	string s="1";
+	int i=0;
+	while(q--){
+		int t;
+		cin>>t;
+		if(t==1){
+			int x;
+			cin>>x;
+			v=v*10+x;
+			s+=x+'0';
+			l++;
+		}
+		if(t==3){
+			cout<<v.val()<<'\n';
+		}
+		if(t==2){
+			v-=(s[i++]-'0')*mint(10).pow(--l);
+		}
+	}
+}

@@ -1,0 +1,7 @@
+#include"io.hpp"
+int main(){
+	long a,b,c,d;
+	cin>>a>>b>>c>>d;
+	cout<<a*b/(double)2;
+	cout<<' '<<(a==c+c&&b==d+d)<<'\n';
+}
