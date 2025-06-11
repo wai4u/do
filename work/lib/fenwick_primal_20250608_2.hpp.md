@@ -63,8 +63,8 @@ data:
   timestamp: '2025-06-08 22:59:20+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - work/lib/fenwick_primal_20250608_2_3.test.cpp
   - work/lib/fenwick_primal_20250608_2_2.test.cpp
+  - work/lib/fenwick_primal_20250608_2_3.test.cpp
   - work/lib/fenwick_primal_20250608_2_1.test.cpp
 documentation_of: work/lib/fenwick_primal_20250608_2.hpp
 layout: document

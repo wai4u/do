@@ -77,11 +77,11 @@ data:
   timestamp: '2025-06-08 19:42:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - work/lib/fenwick_primal_20250608_1_5.test.cpp
   - work/lib/fenwick_primal_20250608_1_3.test.cpp
-  - work/lib/fenwick_primal_20250608_1_2.test.cpp
-  - work/lib/fenwick_primal_20250608_1_4.test.cpp
   - work/lib/fenwick_primal_20250608_1_1.test.cpp
+  - work/lib/fenwick_primal_20250608_1_2.test.cpp
+  - work/lib/fenwick_primal_20250608_1_5.test.cpp
+  - work/lib/fenwick_primal_20250608_1_4.test.cpp
 documentation_of: work/lib/fenwick_primal_20250608_1.hpp
 layout: document
 redirect_from:
