@@ -1,0 +1,36 @@
+#include"io.hpp"
+int main(){
+	int n;
+	cin>>n;
+	vector<int>c(n);
+	for(int i=0;i<n;i++)cin>>c[i],c[i]--;
+	vector<vector<int>>g(n);
+	for(int i=0;i<n-1;i++){
+		int u,v;
+		cin>>u>>v;
+		u--,v--;
+		g[u].push_back(v);
+		g[v].push_back(u);
+	}
+	vector<int>neg(n),size(n,1);
+	vector<long>ans(n);
+	auto dfs=[&](auto dfs,int u,int p)->void{
+		int now=neg[c[u]];
+		neg[c[u]]=0;
+		for(int v:g[u])if(v!=p){
+			dfs(dfs,v,u);
+			long d=size[v]-neg[c[u]];
+			assert(d>=0);
+			ans[c[u]]+=d*(d+1)/2;
+			neg[c[u]]=0;
+			size[u]+=size[v];
+		}
+		neg[c[u]]=now+size[u];
+	};
+	dfs(dfs,0,-1);
+	for(int i=0;i<n;i++){
+		long d=n-neg[i];
+		ans[i]+=d*(d+1)/2;
+		cout<<(long)n*(n+1)/2-ans[i]<<'\n';
+	}
+}
