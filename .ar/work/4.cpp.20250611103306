@@ -1,0 +1,30 @@
+#include"io.hpp"
+int main(){
+	//挿入することを考える
+	//a[i]>a[j] i<jなるi,jがあるとすると
+	//少なくともx<=a[j]か a[i]<=xのどちらかは全て移動したことになる。
+	//iについてi<jかつa[i]>a[j]なる最大のa[j]を見つけておく。
+	//とすればLを固定して、L<a[j]なるj,iのペアについてはR<=a[i]の条件を満たさなければならない。
+	set<int>st;
+	int n;
+	cin>>n;
+	vector<int>a(n);
+	vector<pair<int,int>>ps;
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+		a[i]--;
+		auto it=st.lower_bound(a[i]);
+		if(it!=st.end())ps.push_back(make_pair(a[i],*it));
+		st.insert(a[i]);
+	}
+	sort(ps.begin(),ps.end());
+	int ans=n-1,mn=n;
+	for(int i=n;i--;){
+		while(ps.size()&&ps.back().first>=i){
+			mn=min(mn,ps.back().second);
+			ps.pop_back();
+		}
+		ans=min(ans,i+n-mn);
+	}
+	cout<<ans<<'\n';
+}

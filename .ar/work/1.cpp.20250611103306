@@ -1,0 +1,24 @@
+#include"io.hpp"
+int main(){
+	string s;
+	cin>>s;
+	int n=s.size();
+	int j=0;
+	vector<int>c(n);
+	for(int i=1;i<n;i++){
+		if(s[i]=='R'){
+			j=i;
+			continue;
+		}
+		c[j+(i-j&1)]++;
+	}
+	j=n-1;
+	for(int i=n-1;i--;){
+		if(s[i]=='L'){
+			j=i;
+			continue;
+		}
+		c[j-(j-i&1)]++;
+	}
+	cout<<c<<'\n';
+}

@@ -1,0 +1,10 @@
+#include"io.hpp"
+//#include"baseconv_20250611_1.hpp"
+#include"baseconv_20250611_2.hpp"
+int main(){
+	int n;
+	cin>>n;
+	auto res=baseconv(n,-2,1);
+	for(int i:res)cout<<i;
+	cout<<'\n';
+}
