@@ -65,14 +65,6 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
-  - name: work
-    pages:
-    - icon: ':warning:'
-      path: work/8.cpp
-      title: work/8.cpp
-    - icon: ':warning:'
-      path: work/9.cpp
-      title: work/9.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -117,6 +109,12 @@ data:
       path: work/lib/baseconv_20250609_1.hpp
       title: work/lib/baseconv_20250609_1.hpp
     - icon: ':warning:'
+      path: work/lib/baseconv_20250611_1.hpp
+      title: work/lib/baseconv_20250611_1.hpp
+    - icon: ':warning:'
+      path: work/lib/baseconv_20250611_2.hpp
+      title: work/lib/baseconv_20250611_2.hpp
+    - icon: ':warning:'
       path: work/lib/bimatch_20250608_1.hpp
       title: work/lib/bimatch_20250608_1.hpp
     - icon: ':warning:'
@@ -143,6 +141,12 @@ data:
     - icon: ':warning:'
       path: work/lib/divisors_20250609_1.hpp
       title: work/lib/divisors_20250609_1.hpp
+    - icon: ':warning:'
+      path: work/lib/divrem_euclid_20250611_1.hpp
+      title: work/lib/divrem_euclid_20250611_1.hpp
+    - icon: ':warning:'
+      path: work/lib/divrem_floor_20250611_1.hpp
+      title: work/lib/divrem_floor_20250611_1.hpp
     - icon: ':warning:'
       path: work/lib/edge_set_path_prod_20250608_1.hpp
       title: work/lib/edge_set_path_prod_20250608_1.hpp
@@ -251,6 +255,12 @@ data:
     - icon: ':warning:'
       path: work/lib/sbt_20250608_1.hpp
       title: work/lib/sbt_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/signum_20250611_1.hpp
+      title: work/lib/signum_20250611_1.hpp
+    - icon: ':warning:'
+      path: work/lib/signum_20250611_2.hpp
+      title: work/lib/signum_20250611_2.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.hpp
       title: work/lib/suffix_array_20250608_1.hpp
