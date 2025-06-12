@@ -1,4 +1,5 @@
-#include"io.hpp"
+#define PROBLEM "https://judge.yosupo.jp/problem/unionfind_with_potential_non_commutative_group"
+#include"io_20250608_1.hpp"
 #include"weighted_uf_20250612_2.hpp"
 #include<atcoder/modint>
 using mint=atcoder::modint998244353;

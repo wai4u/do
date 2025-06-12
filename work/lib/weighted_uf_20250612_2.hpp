@@ -2,6 +2,7 @@
 //from root & right operation
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_B
 //https://judge.yosupo.jp/submission/292501
+//https://judge.yosupo.jp/submission/292505
 template<class T,T(*op)(T,T),T(*e)(),T(*inv)(T)>
 struct weighted_uf{
 	int n=0;
