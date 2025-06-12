@@ -1,20 +1,26 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: atcoder/internal_math.hpp
     title: atcoder/internal_math.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: atcoder/internal_type_traits.hpp
     title: atcoder/internal_type_traits.hpp
   _extendedRequiredBy:
   - icon: ':warning:'
     path: atcoder/convolution.hpp
     title: atcoder/convolution.hpp
-  _extendedVerifiedWith: []
+  - icon: ':warning:'
+    path: work/1.cpp
+    title: work/1.cpp
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: work/lib/weighted_uf_20250612_2_2.test.cpp
+    title: work/lib/weighted_uf_20250612_2_2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"atcoder/modint.hpp\"\n\n\n\n#include <cassert>\n#include\
@@ -320,10 +326,12 @@ data:
   isVerificationFile: false
   path: atcoder/modint.hpp
   requiredBy:
+  - work/1.cpp
   - atcoder/convolution.hpp
   timestamp: '2025-06-06 20:31:38+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - work/lib/weighted_uf_20250612_2_2.test.cpp
 documentation_of: atcoder/modint.hpp
 layout: document
 redirect_from:
