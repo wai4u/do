@@ -18,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: work/lib/weighted_uf_20250612_2_2.test.cpp
     title: work/lib/weighted_uf_20250612_2_2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/weighted_uf_20250612_2_3.test.cpp
+    title: work/lib/weighted_uf_20250612_2_3.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -186,6 +189,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - work/lib/weighted_uf_20250612_2_2.test.cpp
+  - work/lib/weighted_uf_20250612_2_3.test.cpp
 documentation_of: atcoder/internal_math.hpp
 layout: document
 redirect_from:
