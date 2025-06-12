@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	set<string>s{"and","not","that","the","you"};
+	vector<string>t(n);
+	for(int i=0;i<n;i++)cin>>t[i];
+	for(string t:t){
+		if(s.count(t)){
+			cout<<"Yes"<<'\n';
+			return 0;
+		}
+	}
+	cout<<"No"<<'\n';
+}
