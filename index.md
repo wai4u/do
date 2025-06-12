@@ -294,6 +294,9 @@ data:
       path: work/lib/weighted_uf_20250612_1.hpp
       title: work/lib/weighted_uf_20250612_1.hpp
     - icon: ':heavy_check_mark:'
+      path: work/lib/weighted_uf_20250612_2.hpp
+      title: work/lib/weighted_uf_20250612_2.hpp
+    - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.hpp
       title: work/lib/zalgo_20250608_1.hpp
     - icon: ':heavy_check_mark:'
@@ -380,6 +383,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/weighted_uf_20250612_1.test.cpp
       title: work/lib/weighted_uf_20250612_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/weighted_uf_20250612_2.test.cpp
+      title: work/lib/weighted_uf_20250612_2.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_1.test.cpp
       title: work/lib/zalgo_20250608_1.test.cpp
