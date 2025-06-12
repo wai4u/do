@@ -11,9 +11,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: atcoder/modint.hpp
     title: atcoder/modint.hpp
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: work/lib/weighted_uf_20250612_2_2.test.cpp
@@ -181,7 +178,6 @@ data:
   isVerificationFile: false
   path: atcoder/internal_math.hpp
   requiredBy:
-  - work/1.cpp
   - atcoder/math.hpp
   - atcoder/modint.hpp
   - atcoder/convolution.hpp

@@ -2,21 +2,9 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
-  - icon: ':warning:'
-    path: work/2.cpp
-    title: work/2.cpp
-  - icon: ':warning:'
-    path: work/lib/main_20250608_1.cpp
-    title: work/lib/main_20250608_1.cpp
+    path: work/lib/weighted_uf_20250612_2.hpp
+    title: work/lib/weighted_uf_20250612_2.hpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,27 +22,23 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.4/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io_20250608_1.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: weighted_uf_20250612_2.hpp:\
     \ line -1: no such header\n"
-  code: '#include"io_20250608_1.hpp"
+  code: '#include"weighted_uf_20250612_2.hpp"
 
     '
   dependsOn:
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
+  - work/lib/weighted_uf_20250612_2.hpp
   isVerificationFile: false
-  path: work/cp/io.hpp
-  requiredBy:
-  - work/2.cpp
-  - work/lib/main_20250608_1.cpp
-  - work/1.cpp
-  timestamp: '2025-06-08 09:29:55+09:00'
+  path: work/cp/weighted_uf.hpp
+  requiredBy: []
+  timestamp: '2025-06-12 16:30:46+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/cp/io.hpp
+documentation_of: work/cp/weighted_uf.hpp
 layout: document
 redirect_from:
-- /library/work/cp/io.hpp
-- /library/work/cp/io.hpp.html
-title: work/cp/io.hpp
+- /library/work/cp/weighted_uf.hpp
+- /library/work/cp/weighted_uf.hpp.html
+title: work/cp/weighted_uf.hpp
 ---

@@ -3,8 +3,8 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
+    path: work/cp/weighted_uf.hpp
+    title: work/cp/weighted_uf.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: work/lib/weighted_uf_20250612_2.test.cpp
@@ -54,7 +54,7 @@ data:
   isVerificationFile: false
   path: work/lib/weighted_uf_20250612_2.hpp
   requiredBy:
-  - work/1.cpp
+  - work/cp/weighted_uf.hpp
   timestamp: '2025-06-12 13:31:15+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
