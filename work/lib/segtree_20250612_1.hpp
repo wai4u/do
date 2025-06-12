@@ -1,5 +1,5 @@
-#include"io.hpp"
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_B
 template<class T,T(*op)(T,T),T(*e)()>
 struct segtree{
 	int n=0,w=0;
@@ -58,19 +58,3 @@ struct segtree{
 		return op(vl,vr);
 	}
 };
-int op(int x,int y){return min(x,y);}
-int e(){return (1l<<31)-1;}
-int main(){
-	int n,q;
-	cin>>n>>q;
-	segtree<int,op,e>seg(n);
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		if(t==0){
-			seg.set(i,j);
-		}else{
-			cout<<seg.prod(i,j+1)<<'\n';
-		}
-	}
-}
