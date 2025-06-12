@@ -1,6 +1,6 @@
-#include"io.hpp"
 //non commutative group
 //from root & right operation
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_B
 template<class T,T(*op)(T,T),T(*e)(),T(*inv)(T)>
 struct weighted_uf{
 	int n=0;
@@ -42,23 +42,3 @@ struct weighted_uf{
 		return 1;
 	}
 };
-int op(int x,int y){return x+y;}
-int e(){return 0;}
-int inv(int x){return -x;}
-int main(){
-	int n,q;
-	cin>>n>>q;
-	weighted_uf<int,op,e,inv>uf(n);
-	while(q--){
-		int t,u,v;
-		cin>>t>>u>>v;
-		if(t==0){
-			int w;
-			cin>>w;
-			uf.unite(u,v,w);
-		}else{
-			if(uf.same(u,v))cout<<uf.diff(u,v)<<'\n';
-			else cout<<'?'<<'\n';
-		}
-	}
-}
