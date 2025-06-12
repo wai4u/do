@@ -9,6 +9,9 @@ data:
     title: work/lib/optimize_20250608_1.hpp
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: work/1.cpp
+    title: work/1.cpp
+  - icon: ':warning:'
     path: work/lib/main_20250608_1.cpp
     title: work/lib/main_20250608_1.cpp
   _extendedVerifiedWith: []
@@ -40,6 +43,7 @@ data:
   path: work/cp/io.hpp
   requiredBy:
   - work/lib/main_20250608_1.cpp
+  - work/1.cpp
   timestamp: '2025-06-08 09:29:55+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
