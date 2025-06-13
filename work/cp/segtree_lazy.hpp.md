@@ -1,22 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
-    path: work/cp/io.hpp
-    title: work/cp/io.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_lazy_20250612_1.hpp
     title: work/lib/segtree_lazy_20250612_1.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
@@ -31,31 +22,23 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.4/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io.hpp: line -1:\
-    \ no such header\n"
-  code: "#include\"io.hpp\"\n#include\"segtree_lazy_20250612_1.hpp\"\nlong c2(long\
-    \ x){return x*(x-1)/2;}\nstruct X{long s=0,c=0,l=0;};\nX op(X x,X y){return X{x.s+y.s+x.c*(y.l-y.c),x.c+y.c,x.l+y.l};}\n\
-    X e(){return X{};}\nX mapping(bool f,X x){return !f?x:X{c2(x.l)-x.s-c2(x.c)-c2(x.l-x.c),x.l-x.c,x.l};}\n\
-    bool composition(bool f,bool g){return f^g;}\nbool id(){return 0;}\nint main(){\n\
-    \tint n,q;\n\tcin>>n>>q;\n\tsegtree_lazy<X,op,e,bool,mapping,composition,id>seg(n,[&](int\
-    \ i){\n\t\tint x;\n\t\tcin>>x;\n\t\treturn X{0,x,1};\n\t});\n\twhile(q--){\n\t\
-    \tint t,l,r;\n\t\tcin>>t>>l>>r;\n\t\tt--,l--;\n\t\tif(t==0)seg.apply(l,r,1);\n\
-    \t\telse cout<<seg.prod(l,r).s<<'\\n';\n\t}\n}\n"
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: segtree_lazy_20250612_1.hpp:\
+    \ line -1: no such header\n"
+  code: '#include"segtree_lazy_20250612_1.hpp"
+
+    '
   dependsOn:
-  - work/cp/io.hpp
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
   - work/lib/segtree_lazy_20250612_1.hpp
   isVerificationFile: false
-  path: work/1.cpp
+  path: work/cp/segtree_lazy.hpp
   requiredBy: []
   timestamp: '2025-06-13 09:18:50+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/1.cpp
+documentation_of: work/cp/segtree_lazy.hpp
 layout: document
 redirect_from:
-- /library/work/1.cpp
-- /library/work/1.cpp.html
-title: work/1.cpp
+- /library/work/cp/segtree_lazy.hpp
+- /library/work/cp/segtree_lazy.hpp.html
+title: work/cp/segtree_lazy.hpp
 ---
