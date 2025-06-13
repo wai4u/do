@@ -4,17 +4,17 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: work/segtree_lazy_20250613_1_1.test.cpp
-    title: work/segtree_lazy_20250613_1_1.test.cpp
+    path: work/lib/segtree_lazy_20250613_1_1.test.cpp
+    title: work/lib/segtree_lazy_20250613_1_1.test.cpp
   - icon: ':heavy_check_mark:'
-    path: work/segtree_lazy_20250613_1_2.test.cpp
-    title: work/segtree_lazy_20250613_1_2.test.cpp
+    path: work/lib/segtree_lazy_20250613_1_2.test.cpp
+    title: work/lib/segtree_lazy_20250613_1_2.test.cpp
   - icon: ':heavy_check_mark:'
-    path: work/segtree_lazy_20250613_1_3.test.cpp
-    title: work/segtree_lazy_20250613_1_3.test.cpp
+    path: work/lib/segtree_lazy_20250613_1_3.test.cpp
+    title: work/lib/segtree_lazy_20250613_1_3.test.cpp
   - icon: ':heavy_check_mark:'
-    path: work/segtree_lazy_20250613_1_4.test.cpp
-    title: work/segtree_lazy_20250613_1_4.test.cpp
+    path: work/lib/segtree_lazy_20250613_1_4.test.cpp
+    title: work/lib/segtree_lazy_20250613_1_4.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -24,8 +24,8 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I
-  bundledCode: "#line 1 \"work/segtree_lazy_20250613_1.hpp\"\n//minimal\n//non commutative\
-    \ monoid\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\n\
+  bundledCode: "#line 1 \"work/lib/segtree_lazy_20250613_1.hpp\"\n//minimal\n//non\
+    \ commutative monoid\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\n\
     //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H\n\
     //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I\ntemplate<class\
     \ X,X(*op)(X,X),X(*e)(),\nclass F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>\n\
@@ -57,19 +57,19 @@ data:
     \t\tif(r&1)vr=op(d[--r],vr);r>>=1;\n\t\t}\n\t\treturn op(vl,vr);\n\t}\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: work/segtree_lazy_20250613_1.hpp
+  path: work/lib/segtree_lazy_20250613_1.hpp
   requiredBy: []
-  timestamp: '2025-06-13 18:37:57+09:00'
+  timestamp: '2025-06-13 19:41:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - work/segtree_lazy_20250613_1_3.test.cpp
-  - work/segtree_lazy_20250613_1_1.test.cpp
-  - work/segtree_lazy_20250613_1_4.test.cpp
-  - work/segtree_lazy_20250613_1_2.test.cpp
-documentation_of: work/segtree_lazy_20250613_1.hpp
+  - work/lib/segtree_lazy_20250613_1_3.test.cpp
+  - work/lib/segtree_lazy_20250613_1_1.test.cpp
+  - work/lib/segtree_lazy_20250613_1_4.test.cpp
+  - work/lib/segtree_lazy_20250613_1_2.test.cpp
+documentation_of: work/lib/segtree_lazy_20250613_1.hpp
 layout: document
 redirect_from:
-- /library/work/segtree_lazy_20250613_1.hpp
-- /library/work/segtree_lazy_20250613_1.hpp.html
-title: work/segtree_lazy_20250613_1.hpp
+- /library/work/lib/segtree_lazy_20250613_1.hpp
+- /library/work/lib/segtree_lazy_20250613_1.hpp.html
+title: work/lib/segtree_lazy_20250613_1.hpp
 ---
