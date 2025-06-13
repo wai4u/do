@@ -201,6 +201,9 @@ data:
       path: work/lib/fenwick_20250609_3.hpp
       title: work/lib/fenwick_20250609_3.hpp
     - icon: ':warning:'
+      path: work/lib/fenwick_20250613_1.hpp
+      title: work/lib/fenwick_20250613_1.hpp
+    - icon: ':warning:'
       path: work/lib/fenwick_bitset_20250609_1.hpp
       title: work/lib/fenwick_bitset_20250609_1.hpp
     - icon: ':warning:'
