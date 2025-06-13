@@ -3,9 +3,6 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
-  - icon: ':warning:'
     path: work/cp/segtree_lazy.hpp
     title: work/cp/segtree_lazy.hpp
   _extendedVerifiedWith:
@@ -126,7 +123,6 @@ data:
   isVerificationFile: false
   path: work/lib/segtree_lazy_20250612_1.hpp
   requiredBy:
-  - work/1.cpp
   - work/cp/segtree_lazy.hpp
   timestamp: '2025-06-13 09:18:50+09:00'
   verificationStatus: LIBRARY_ALL_AC
