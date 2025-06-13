@@ -43,5 +43,15 @@
 "work/lib/weighted_uf_20250612_2_3.test.cpp": "2025-06-12 13:31:15 +0900",
 "work/lib/zalgo_20250608_1.test.cpp": "2025-06-08 19:32:17 +0900",
 "work/lib/zalgo_20250608_2.test.cpp": "2025-06-08 19:32:17 +0900",
-"work/lib/zalgo_20250608_3.test.cpp": "2025-06-08 19:32:17 +0900"
+"work/lib/zalgo_20250608_3.test.cpp": "2025-06-08 19:32:17 +0900",
+"work/segtree_20250613_1_1.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_20250613_1_2.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_dual_20250613_1_1.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_dual_20250613_1_2.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_dual_20250613_2_1.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_dual_20250613_2_2.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_lazy_20250613_1_1.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_lazy_20250613_1_2.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_lazy_20250613_1_3.test.cpp": "2025-06-13 18:37:57 +0900",
+"work/segtree_lazy_20250613_1_4.test.cpp": "2025-06-13 18:37:57 +0900"
 }
