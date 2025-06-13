@@ -1,0 +1,24 @@
+#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_E"
+#include"io_20250608_1.hpp"
+#include"segtree_dual_20250613_2.hpp"
+int op(int x,int y){return x+y;}
+int e(){return 0;}
+int main(){
+	int n,q;
+	cin>>n>>q;
+	segtree_dual<int,op,e>seg(n+1);
+	int id=0;
+	while(q--){
+		int t;
+		cin>>t;
+		if(t==0){
+			int l,r,x;
+			cin>>l>>r>>x;
+			seg.apply(l,r+1,x);
+		}else{
+			int i;
+			cin>>i;
+			cout<<seg[i]<<'\n';
+		}
+	}
+}
