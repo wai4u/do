@@ -1,0 +1,45 @@
+#include"io.hpp"
+//recursive
+//minimal
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_D
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_E
+template<class T,T(*op)(T,T),T(*e)()>
+struct segtree_dual{
+	int n,w=1,h=1;
+	vector<T>d;
+	segtree_dual(int n):n(n){while(w<n)w<<=1,++h;d.assign(w+w,e());}
+	//void push(int i){d[i<<1]=op(d[i<<1],d[i]),d[i<<1|1]=op(d[i<<1|1],d[i]),d[i]=e();}
+	void _apply(int i,T x){d[i]=op(d[i],x);}
+	void push(int i){_apply(i<<1,d[i]),_apply(i<<1|1,d[i]),d[i]=e();}
+	T&operator[](int i){i+=w;for(int j=h;--j;)push(i>>j);return d[i];}
+	void apply(int l,int r,T x){apply(l,r,x,1,0,w);}
+	void apply(int L,int R,const T&x,int i,int l,int r){
+		if(r<=L||R<=l)return;
+		//if(L<=l&&r<=R){d[i]=op(d[i],x);return;}
+		if(L<=l&&r<=R)return _apply(i,x);
+		int c=l+r>>1;
+		push(i);
+		apply(L,R,x,i<<1,l,c),apply(L,R,x,i<<1|1,c,r);
+	}
+};
+int op(int x,int y){return y==-1?x:y;}
+int e(){return -1;}
+int main(){
+	int n,q;
+	cin>>n>>q;
+	segtree_dual<int,op,e>seg(n+1);
+	for(int i=0;i<=n;i++)seg[i]=(1l<<31)-1;
+	while(q--){
+		int t;
+		cin>>t;
+		if(t==0){
+			int l,r,x;
+			cin>>l>>r>>x;
+			seg.apply(l,r+1,x);
+		}else{
+			int i;
+			cin>>i;
+			cout<<seg[i]<<'\n';
+		}
+	}
+}
