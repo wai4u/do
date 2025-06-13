@@ -1,4 +1,3 @@
-#include"io.hpp"
 //proxy set
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_B
@@ -10,13 +9,19 @@ struct segtree{
 	struct proxy{
 		vector<T>&d;
 		int i;
+		/*
 		proxy&operator=(T x){
 			d[i]=x;
 			int j=i;
 			while(j>>=1)d[j]=op(d[j<<1],d[j<<1|1]);
 			return *this;
 		}
-		operator T(){return d[i];}
+		*/
+		void upd(){int j=i;while(j>>=1)d[j]=op(d[j<<1],d[j<<1|1]);}
+		proxy&operator=(T x){d[i]=x,upd();return *this;}
+		void apply(T x){d[i]=op(d[i],x),upd();}
+		//operator T(){return d[i];}
+		operator T()const {return d[i];}
 	};
 	proxy operator[](int i){return proxy{d,i+n};}
 	T prod(int l,int r){
@@ -29,18 +34,3 @@ struct segtree{
 		return op(vl,vr);
 	}
 };
-#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A"
-//#include"io_20250608_1.hpp"
-int op(int x,int y){return min(x,y);}
-int e(){return(1l<<31)-1;}
-int main(){
-	int n,q;
-	cin>>n>>q;
-	segtree<int,op,e>seg(n+1);
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		if(t==0)seg[i]=j;
-		else cout<<seg.prod(i,j+1)<<'\n';
-	}
-}
