@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	int s=0;
+	vector<int>t(n);
+	for(int i=0;i<n;i++)cin>>t[i],s+=t[i];
+	int m;
+	cin>>m;
+	while(m--){
+		int i,x;
+		cin>>i>>x;
+		i--;
+		cout<<s+(x-t[i])<<'\n';
+	}
+}
