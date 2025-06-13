@@ -65,6 +65,23 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
+  - name: work
+    pages:
+    - icon: ':warning:'
+      path: work/1.cpp
+      title: work/1.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_20250613_1.hpp
+      title: work/segtree_20250613_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_dual_20250613_1.hpp
+      title: work/segtree_dual_20250613_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_dual_20250613_2.hpp
+      title: work/segtree_dual_20250613_2.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_lazy_20250613_1.hpp
+      title: work/segtree_lazy_20250613_1.hpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -465,5 +482,37 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/zalgo_20250608_3.test.cpp
       title: work/lib/zalgo_20250608_3.test.cpp
+  - name: work
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_20250613_1_1.test.cpp
+      title: work/segtree_20250613_1_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_20250613_1_2.test.cpp
+      title: work/segtree_20250613_1_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_dual_20250613_1_1.test.cpp
+      title: work/segtree_dual_20250613_1_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_dual_20250613_1_2.test.cpp
+      title: work/segtree_dual_20250613_1_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_dual_20250613_2_1.test.cpp
+      title: work/segtree_dual_20250613_2_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_dual_20250613_2_2.test.cpp
+      title: work/segtree_dual_20250613_2_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_lazy_20250613_1_1.test.cpp
+      title: work/segtree_lazy_20250613_1_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_lazy_20250613_1_2.test.cpp
+      title: work/segtree_lazy_20250613_1_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_lazy_20250613_1_3.test.cpp
+      title: work/segtree_lazy_20250613_1_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/segtree_lazy_20250613_1_4.test.cpp
+      title: work/segtree_lazy_20250613_1_4.test.cpp
 layout: toppage
 ---
