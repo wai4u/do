@@ -1,5 +1,6 @@
-#include"io.hpp"
 //internally 1-indexed
+//https://atcoder.jp/contests/arc197/submissions/66700322
+//https://atcoder.jp/contests/arc197/submissions/66700386
 template<class T,bool dual=0>
 struct fenwick{
 	int n=0;
@@ -83,14 +84,13 @@ struct fenwick{
 		return i;
 	}
 };
+/*
 int main(){
 	int q;
 	cin>>q;
 	int k=3e6;
-	/*
-	fenwick<int>s(k);
-	for(int i=1;i<k;i++)s.add(i,1);
-	*/
+	//fenwick<int>s(k);
+	//for(int i=1;i<k;i++)s.add(i,1);
 	fenwick<int>s(k,[&](int i){return 1;});
 	s.add(0,-1);
 	vector<bool>f(k,1);
@@ -104,6 +104,7 @@ int main(){
 				s.add(i,-1);
 			}
 		}
-		cout<<s.max_right(0,[&](int x){return x<b;})<<'\n';
+		cout<<s.max_right([&](int x){return x<b;})<<'\n';
 	}
 }
+*/
