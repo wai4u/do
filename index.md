@@ -284,6 +284,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250613_2.hpp
       title: work/lib/segtree_20250613_2.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_20250614_1.hpp
+      title: work/lib/segtree_20250614_1.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_20250614_2.hpp
+      title: work/lib/segtree_20250614_2.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_dual_20250612_1.hpp
       title: work/lib/segtree_dual_20250612_1.hpp
@@ -311,6 +317,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250613_3.hpp
       title: work/lib/segtree_lazy_20250613_3.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_lazy_20250614_1.hpp
+      title: work/lib/segtree_lazy_20250614_1.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_lazy_20250614_2.hpp
+      title: work/lib/segtree_lazy_20250614_2.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_lazy_20250614_3.hpp
+      title: work/lib/segtree_lazy_20250614_3.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_lazy_20250614_4.hpp
+      title: work/lib/segtree_lazy_20250614_4.hpp
     - icon: ':warning:'
       path: work/lib/signum_20250611_1.hpp
       title: work/lib/signum_20250611_1.hpp
