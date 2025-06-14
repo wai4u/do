@@ -1,10 +1,7 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/cp/segtree_lazy.hpp
-    title: work/cp/segtree_lazy.hpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_lazy_20250612_1_1.test.cpp
@@ -122,8 +119,7 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: work/lib/segtree_lazy_20250612_1.hpp
-  requiredBy:
-  - work/cp/segtree_lazy.hpp
+  requiredBy: []
   timestamp: '2025-06-13 09:18:50+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
