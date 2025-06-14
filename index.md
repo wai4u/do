@@ -65,11 +65,6 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
-  - name: work
-    pages:
-    - icon: ':warning:'
-      path: work/1.cpp
-      title: work/1.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'

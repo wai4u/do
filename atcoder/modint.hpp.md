@@ -11,9 +11,6 @@ data:
   - icon: ':warning:'
     path: atcoder/convolution.hpp
     title: atcoder/convolution.hpp
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_lazy_20250614_10_5.test.cpp
@@ -335,7 +332,6 @@ data:
   isVerificationFile: false
   path: atcoder/modint.hpp
   requiredBy:
-  - work/1.cpp
   - atcoder/convolution.hpp
   timestamp: '2025-06-06 20:31:38+09:00'
   verificationStatus: LIBRARY_ALL_AC

@@ -11,9 +11,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: atcoder/modint.hpp
     title: atcoder/modint.hpp
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_lazy_20250614_10_5.test.cpp
@@ -124,7 +121,6 @@ data:
   isVerificationFile: false
   path: atcoder/internal_type_traits.hpp
   requiredBy:
-  - work/1.cpp
   - atcoder/modint.hpp
   - atcoder/fenwicktree.hpp
   - atcoder/convolution.hpp
