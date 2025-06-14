@@ -22,7 +22,7 @@ struct fenwick{
 	}
 	void add(int i,T x){
 		assert(0<=i);
-		if(!built){d[i]+=x;return;}
+		if(!built){if(i<n)d[i]+=x;return;}
 		while(i<n)d[i]+=x,i|=i+1;
 	}
 	T operator[](int i){
