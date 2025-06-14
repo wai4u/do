@@ -1,8 +1,3 @@
-//recursive
-//binary search
-//枝刈り
-//https://atcoder.jp/contests/practice2/submissions/66708645
-//https://atcoder.jp/contests/practice2/submissions/66708655
 template<class X,X(*op)(X,X),X(*e)(),class F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>
 struct segtree_lazy{
 	int n,w=1,h=1;
@@ -12,8 +7,9 @@ struct segtree_lazy{
 	void push(int i){_apply(i<<1,lz[i]),_apply(i<<1|1,lz[i]),lz[i]=id();}
 	void merge(int i){d[i]=op(d[i<<1],d[i<<1|1]);}
 	void pull(int i){for(int j=h;--j;)push(i>>j);}
-	void set(int i,X x){assert(0<=i&&i<n);pull(i+=w),d[i]=x;while(i>>=1)merge(i);}
-	void apply(int i,F f){assert(0<=i&&i<n);pull(i+=w),_apply(i,f);while(i>>=1)merge(i);}
+	void upd(int i){while(i>>=1)merge(i);}
+	void set(int i,X x){assert(0<=i&&i<n);pull(i+=w),d[i]=x,upd(i);}
+	void apply(int i,F f){assert(0<=i&&i<n);pull(i+=w),_apply(i,f),upd(i);}
 	X get(int i){assert(0<=i&&i<n);pull(i+=w);return d[i];}
 	X operator[](int i){return get(i);}
 	void apply(int l,int r,F f){
@@ -53,13 +49,12 @@ struct segtree_lazy{
 	}
 	template<class G>
 	int max_right(int L,G f,X&x,int l,int r,int i){
-		if(r<=L)return L;
 		if(L<=l){
 			if(f(op(x,d[i]))){x=op(x,d[i]);return min(r,n);}
 			if(l+1==r)return l;
 		}
 		push(i);
-		int c=l+r>>1,j=max_right(L,f,x,l,c,i<<1);
+		int c=l+r>>1,j=c<=L?L:max_right(L,f,x,l,c,i<<1);
 		return j<c||j==n?j:max_right(L,f,x,c,r,i<<1|1);
 	}
 	template<class G>
@@ -71,13 +66,12 @@ struct segtree_lazy{
 	}
 	template<class G>
 	int min_left(int R,G f,X&x,int l,int r,int i){
-		if(R<=l)return R;
 		if(r<=R){
 			if(f(op(d[i],x))){x=op(d[i],x);return l;}
 			if(l+1==r)return r;
 		}
 		push(i);
-		int c=l+r>>1,j=min_left(R,f,x,c,r,i<<1|1);
+		int c=l+r>>1,j=R<=c?R:min_left(R,f,x,c,r,i<<1|1);
 		return c<j?j:min_left(R,f,x,l,c,i<<1);
 	}
 };

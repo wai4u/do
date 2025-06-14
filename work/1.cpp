@@ -1,7 +1,4 @@
 #include"io.hpp"
-//recursive
-//https://atcoder.jp/contests/practice2/submissions/66708733
-//https://atcoder.jp/contests/practice2/submissions/66708741
 template<class X,X(*op)(X,X),X(*e)(),class F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>
 struct segtree_lazy{
 	int n,w=1,h=1;
