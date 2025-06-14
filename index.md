@@ -335,6 +335,9 @@ data:
     - icon: ':warning:'
       path: work/lib/segtree_lazy_20250614_1.hpp
       title: work/lib/segtree_lazy_20250614_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_10.hpp
+      title: work/lib/segtree_lazy_20250614_10.hpp
     - icon: ':warning:'
       path: work/lib/segtree_lazy_20250614_2.hpp
       title: work/lib/segtree_lazy_20250614_2.hpp
@@ -581,6 +584,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250613_3_4.test.cpp
       title: work/lib/segtree_lazy_20250613_3_4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_10_1.test.cpp
+      title: work/lib/segtree_lazy_20250614_10_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_10_2.test.cpp
+      title: work/lib/segtree_lazy_20250614_10_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_10_3.test.cpp
+      title: work/lib/segtree_lazy_20250614_10_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_10_4.test.cpp
+      title: work/lib/segtree_lazy_20250614_10_4.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_5_1.test.cpp
       title: work/lib/segtree_lazy_20250614_5_1.test.cpp
