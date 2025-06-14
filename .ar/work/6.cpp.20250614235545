@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n,h,m;
+	cin>>n>>h>>m;
+	//どちらかがこれの時のもう一方の最大値みたいな感じで管理していく。
+	vector<int>a(n),b(n);
+	for(int i=0;i<n;i++)cin>>a[i]>>b[i];
+	vector<int>dp(h+1,-1),ep(m+1,-1);
+	dp[h]=m;
+	ep[m]=h;
+	for(int i=0;i<n;i++){
+		//素手
+		vector<int>ndp(h+1,-1),nep(m+1,-1);
+		bool ok=0;
+		for(int j=h;j>=a[i];j--)if(dp[j]>=0){
+			ok=1;
+			nep[dp[j]]=max(nep[dp[j]],j-a[i]);
+		}
+		for(int j=m;j>=b[i];j--)if(ep[j]>=0){
+			ok=1;
+			ndp[ep[j]]=max(ndp[ep[j]],j-b[i]);
+		}
+		swap(dp,ndp);
+		swap(ep,nep);
+		for(int j=0;j<=h;j++)if(dp[j]>=0)ep[dp[j]]=max(ep[dp[j]],j);
+		for(int j=0;j<=m;j++)if(ep[j]>=0)dp[ep[j]]=max(dp[ep[j]],j);
+		if(ok)continue;
+		cout<<i<<'\n';
+		return 0;
+	}
+	cout<<n<<'\n';
+}

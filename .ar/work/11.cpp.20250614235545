@@ -1,0 +1,56 @@
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){
+	int h,w;
+	cin>>h>>w;
+	bool rev=0;
+	if(h>w)swap(h,w),rev=1;
+	auto g=vector(h,vector(w,0));
+	if(rev){
+		for(int j=0;j<w;j++){
+			for(int i=0;i<h;i++){
+				char x;
+				cin>>x;
+				int v=(x=='#')*2;
+				g[i][j]=v;
+			}
+		}
+	}else{
+		for(int i=0;i<h;i++){
+			for(int j=0;j<w;j++){
+				char x;
+				cin>>x;
+				int v=(x=='#')*2;
+				g[i][j]=v;
+			}
+		}
+	}
+	int off=h*w;
+	vector<int>cnt(1e6);
+	cnt[off]=1;
+	long ans=0;
+	for(int u=0;u<h;u++){
+		vector<int>x(w);
+		for(int d=u;d<h;d++){
+			int dy=d-u+1;
+			int s=0;
+			for(int j=0;j<w;j++){
+				x[j]+=g[d][j];
+				s+=x[j];
+				ans+=cnt[s-(j+1)*dy+off]++;
+			}
+			s=0;
+			for(int j=0;j<w;j++){
+				s+=x[j];
+				cnt[s-(j+1)*dy+off]--;
+			}
+		}
+	}
+	cout<<ans<<'\n';
+}
+int main(){
+	ios::sync_with_stdio(0),cin.tie(0);
+	int t;
+	cin>>t;
+	while(t--)solve();
+}

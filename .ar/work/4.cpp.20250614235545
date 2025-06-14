@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n,m;
+	cin>>n>>m;
+	vector<vector<pair<int,int>>>g(n);
+	for(int i=0;i<m;i++){
+		int u,v,w;
+		cin>>u>>v>>w;
+		u--,v--;
+		g[u].push_back(make_pair(v,w));
+	}
+	auto dp=vector(n,vector(1<<10,false));
+	dp[0][0]=1;
+	queue<pair<int,int>>que;
+	que.push(make_pair(0,0));
+	while(que.size()){
+		auto[u,su]=que.front();que.pop();
+		for(auto[v,w]:g[u]){
+			int sv=su^w;
+			if(dp[v][sv])continue;
+			dp[v][sv]=1;
+			que.push(make_pair(v,sv));
+		}
+	}
+	for(int s=0;s<1<<10;s++)if(dp[n-1][s]){
+		cout<<s<<'\n';
+		return 0;
+	}
+	cout<<-1<<'\n';
+}
