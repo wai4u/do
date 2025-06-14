@@ -3,9 +3,6 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
-  - icon: ':warning:'
     path: work/cp/segtree_dual.hpp
     title: work/cp/segtree_dual.hpp
   _extendedVerifiedWith:
@@ -64,7 +61,6 @@ data:
   isVerificationFile: false
   path: work/lib/segtree_dual_20250614_2.hpp
   requiredBy:
-  - work/1.cpp
   - work/cp/segtree_dual.hpp
   timestamp: '2025-06-14 18:00:44+09:00'
   verificationStatus: LIBRARY_ALL_AC

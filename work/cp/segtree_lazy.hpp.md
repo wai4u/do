@@ -4,10 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_lazy_20250614_10.hpp
     title: work/lib/segtree_lazy_20250614_10.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,9 +31,8 @@ data:
   - work/lib/segtree_lazy_20250614_10.hpp
   isVerificationFile: false
   path: work/cp/segtree_lazy.hpp
-  requiredBy:
-  - work/1.cpp
-  timestamp: '2025-06-14 18:04:32+09:00'
+  requiredBy: []
+  timestamp: '2025-06-14 18:32:07+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/cp/segtree_lazy.hpp

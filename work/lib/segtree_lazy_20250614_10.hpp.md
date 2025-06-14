@@ -3,9 +3,6 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
-  - icon: ':warning:'
     path: work/cp/segtree_lazy.hpp
     title: work/cp/segtree_lazy.hpp
   _extendedVerifiedWith:
@@ -21,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_lazy_20250614_10_4.test.cpp
     title: work/lib/segtree_lazy_20250614_10_4.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/segtree_lazy_20250614_10_5.test.cpp
+    title: work/lib/segtree_lazy_20250614_10_5.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -28,6 +28,8 @@ data:
     links:
     - https://atcoder.jp/contests/practice2/submissions/66709750
     - https://atcoder.jp/contests/practice2/submissions/66709756
+    - https://atcoder.jp/contests/practice2/submissions/66714336
+    - https://judge.yosupo.jp/submission/292922
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H
@@ -36,6 +38,7 @@ data:
     //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G\n\
     //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I\n\
     //https://atcoder.jp/contests/practice2/submissions/66709756\n//https://atcoder.jp/contests/practice2/submissions/66709750\n\
+    //https://judge.yosupo.jp/submission/292922\n//https://atcoder.jp/contests/practice2/submissions/66714336\n\
     template<\nclass X,X(*op)(X,X),X(*e)(),\nclass F=X,X(*mapping)(F,X)=op,\nF(*composition)(F,F)=op,F(*id)()=e\n\
     >\nstruct segtree_lazy{\n\tint n=0,w=0,h=0;\n\tvector<X>d;\n\tvector<F>lz;\n\t\
     bool built=0,hung=0;\n\tsegtree_lazy(){}\n\tsegtree_lazy(int n){init(n);}\n\t\
@@ -76,7 +79,8 @@ data:
   code: "//lazy build/apply-hanging\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\n\
     //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H\n\
     //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I\n//https://atcoder.jp/contests/practice2/submissions/66709756\n\
-    //https://atcoder.jp/contests/practice2/submissions/66709750\ntemplate<\nclass\
+    //https://atcoder.jp/contests/practice2/submissions/66709750\n//https://judge.yosupo.jp/submission/292922\n\
+    //https://atcoder.jp/contests/practice2/submissions/66714336\ntemplate<\nclass\
     \ X,X(*op)(X,X),X(*e)(),\nclass F=X,X(*mapping)(F,X)=op,\nF(*composition)(F,F)=op,F(*id)()=e\n\
     >\nstruct segtree_lazy{\n\tint n=0,w=0,h=0;\n\tvector<X>d;\n\tvector<F>lz;\n\t\
     bool built=0,hung=0;\n\tsegtree_lazy(){}\n\tsegtree_lazy(int n){init(n);}\n\t\
@@ -118,13 +122,13 @@ data:
   isVerificationFile: false
   path: work/lib/segtree_lazy_20250614_10.hpp
   requiredBy:
-  - work/1.cpp
   - work/cp/segtree_lazy.hpp
-  timestamp: '2025-06-14 14:40:45+09:00'
+  timestamp: '2025-06-14 18:32:07+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - work/lib/segtree_lazy_20250614_10_1.test.cpp
   - work/lib/segtree_lazy_20250614_10_4.test.cpp
+  - work/lib/segtree_lazy_20250614_10_5.test.cpp
   - work/lib/segtree_lazy_20250614_10_2.test.cpp
   - work/lib/segtree_lazy_20250614_10_3.test.cpp
 documentation_of: work/lib/segtree_lazy_20250614_10.hpp

@@ -4,10 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: work/lib/segtree_dual_20250614_2.hpp
     title: work/lib/segtree_dual_20250614_2.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,8 +31,7 @@ data:
   - work/lib/segtree_dual_20250614_2.hpp
   isVerificationFile: false
   path: work/cp/segtree_dual.hpp
-  requiredBy:
-  - work/1.cpp
+  requiredBy: []
   timestamp: '2025-06-14 18:04:32+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
