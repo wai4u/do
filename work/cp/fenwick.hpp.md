@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: work/lib/fenwick_20250609_1.hpp
     title: work/lib/fenwick_20250609_1.hpp
   _extendedRequiredBy: []
@@ -32,7 +32,7 @@ data:
   isVerificationFile: false
   path: work/cp/fenwick.hpp
   requiredBy: []
-  timestamp: '2025-06-09 19:07:01+09:00'
+  timestamp: '2025-06-14 20:16:24+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/cp/fenwick.hpp

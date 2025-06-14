@@ -47,7 +47,7 @@ data:
   isVerificationFile: false
   path: work/lib/fenwick_bitset_20250609_2.hpp
   requiredBy: []
-  timestamp: '2025-06-09 19:38:16+09:00'
+  timestamp: '2025-06-14 20:16:24+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/lib/fenwick_bitset_20250609_2.hpp

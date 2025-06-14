@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: work/lib/fenwick_20250609_1.hpp
     title: work/lib/fenwick_20250609_1.hpp
   _extendedRequiredBy:
@@ -21,7 +21,7 @@ data:
     \tfenwick(){}\n\tfenwick(int n){init(n);}\n\tvoid init(int n){\n\t\tthis->n=n;\n\
     \t\td.assign(n,T{});\n\t\tbuilt=0;\n\t}\n\tvoid build(){\n\t\tif(built)return;\n\
     \t\tbuilt=1;\n\t\tfor(int i=0;i<n;i++){\n\t\t\tint j=i|i+1;\n\t\t\tif(j<n)d[j]+=d[i];\n\
-    \t\t}\n\t}\n\tvoid add(int i,T x){\n\t\tassert(0<=i);\n\t\tif(!built){d[i]+=x;return;}\n\
+    \t\t}\n\t}\n\tvoid add(int i,T x){\n\t\tassert(0<=i);\n\t\tif(!built){if(i<n)d[i]+=x;return;}\n\
     \t\twhile(i<n)d[i]+=x,i|=i+1;\n\t}\n\tT operator[](int i){\n\t\tassert(i<n);\n\
     \t\tbuild();\n\t\tT y{};\n\t\twhile(i>=0)y+=d[i],i&=i+1,i--;\n\t\treturn y;\n\t\
     }\n\tint lower_bound(T x){//first [i]>=x\n\t\tint i=0,w=1;while(w<=n)w<<=1;\n\t\
@@ -70,7 +70,7 @@ data:
   path: work/lib/fenwick_bitset_20250609_1.hpp
   requiredBy:
   - work/cp/fenwick_bitset.hpp
-  timestamp: '2025-06-09 19:07:01+09:00'
+  timestamp: '2025-06-14 20:16:24+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/lib/fenwick_bitset_20250609_1.hpp

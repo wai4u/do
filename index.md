@@ -174,6 +174,9 @@ data:
       path: work/lib/edmonds_karp_20250608_1.hpp
       title: work/lib/edmonds_karp_20250608_1.hpp
     - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_1deg_20250614_1.hpp
+      title: work/lib/fenwick_1deg_20250614_1.hpp
+    - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_20250608_1.hpp
       title: work/lib/fenwick_20250608_1.hpp
     - icon: ':heavy_check_mark:'
@@ -191,7 +194,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_20250608_6.hpp
       title: work/lib/fenwick_20250608_6.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_20250609_1.hpp
       title: work/lib/fenwick_20250609_1.hpp
     - icon: ':warning:'
@@ -428,6 +431,9 @@ data:
   verificationCategories:
   - name: work/lib
     pages:
+    - icon: ':heavy_check_mark:'
+      path: work/lib/fenwick_1deg_20250614_1.test.cpp
+      title: work/lib/fenwick_1deg_20250614_1.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_20250608_1.test.cpp
       title: work/lib/fenwick_20250608_1.test.cpp
