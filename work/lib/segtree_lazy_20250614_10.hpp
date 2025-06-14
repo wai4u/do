@@ -5,6 +5,8 @@
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I
 //https://atcoder.jp/contests/practice2/submissions/66709756
 //https://atcoder.jp/contests/practice2/submissions/66709750
+//https://judge.yosupo.jp/submission/292922
+//https://atcoder.jp/contests/practice2/submissions/66714336
 template<
 class X,X(*op)(X,X),X(*e)(),
 class F=X,X(*mapping)(F,X)=op,
