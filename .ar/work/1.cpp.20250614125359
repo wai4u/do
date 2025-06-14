@@ -1,0 +1,103 @@
+#include"io.hpp"
+//binary search
+//https://atcoder.jp/contests/practice2/submissions/66708278
+//https://atcoder.jp/contests/practice2/submissions/66708244
+template<class T,T(*op)(T,T),T(*e)()>
+struct segtree{
+	int n,w=1;
+	vector<T>d;
+	segtree(int n):n(n){while(w<n)w<<=1;d.assign(w+w,e());}
+	void set(int i,T x){assert(0<=i&&i<n);d[i+=w]=x;while(i>>=1)d[i]=op(d[i<<1],d[i<<1|1]);}
+	T operator[](int i){assert(0<=i&&i<n);return d[i+w];}
+	T prod(int l,int r){assert(0<=l&&l<=r&&r<=n);return prod(l,r,1,0,w);}
+	T prod(int L,int R,int i,int l,int r){
+		if(r<=L||R<=l)return e();
+		if(L<=l&&r<=R)return d[i];
+		int c=l+r>>1;
+		return op(prod(L,R,i<<1,l,c),prod(L,R,i<<1|1,c,r));
+	}
+	template<class F>
+	int max_right(int l,F f){
+		assert(0<=l&&l<=n);
+		T x=e();
+		return min(n,max_right(l,f,x,0,w,1));
+	}
+	template<class F>
+	int max_right(int L,F f,T&x,int l,int r,int i){
+		if(r<=L)return L;
+		if(L<=l){
+			if(f(op(x,d[i]))){x=op(x,d[i]);return r;}
+			if(l+1==r)return l;
+		}
+		int c=l+r>>1,j=max_right(L,f,x,l,c,i<<1);
+		return j<c?j:max_right(L,f,x,c,r,i<<1|1);
+	}
+	template<class F>
+	int min_left(int r,F f){
+		assert(0<=r&&r<=n);
+		T x=e();
+		return min_left(r,f,x,0,w,1);
+	}
+	template<class F>
+	int min_left(int R,F f,T&x,int l,int r,int i){
+		if(R<=l)return R;
+		if(r<=R){
+			if(f(op(d[i],x))){x=op(d[i],x);return l;}
+			if(l+1==r)return r;
+		}
+		int c=l+r>>1,j=min_left(R,f,x,c,r,i<<1|1);
+		return c<j?j:min_left(R,f,x,l,c,i<<1);
+	}
+};
+int op(int x,int y){return max(x,y);}
+int e(){return 0;}
+/*
+int main(){
+	int n,q;
+	cin>>n>>q;
+	segtree<int,op,e>seg(n);
+	for(int i=0;i<n;i++){
+		int a;
+		cin>>a;
+		seg.set(i,a);
+	}
+	while(q--){
+		int t,i,j;
+		cin>>t>>i>>j;
+		i--;
+		if(t==1){
+			seg.set(i,j);
+		}
+		if(t==2){
+			cout<<seg.prod(i,j)<<'\n';
+		}
+		if(t==3){
+			cout<<seg.max_right(i,[&](int x){return x<j;})+1<<'\n';
+		}
+	}
+}
+*/
+int main(){
+	int n,q;
+	cin>>n>>q;
+	segtree<int,op,e>seg(n);
+	for(int i=0;i<n;i++){
+		int a;
+		cin>>a;
+		seg.set(n-1-i,a);
+	}
+	while(q--){
+		int t,i,j;
+		cin>>t>>i>>j;
+		i--;
+		if(t==1){
+			seg.set(n-i-1,j);
+		}
+		if(t==2){
+			cout<<seg.prod(n-j,n-i)<<'\n';
+		}
+		if(t==3){
+			cout<<n-seg.min_left(n-i,[&](int x){return x<j;})+1<<'\n';
+		}
+	}
+}
