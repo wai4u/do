@@ -2,10 +2,22 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: work/lib/segtree_lazy_20250614_9_1.test.cpp
+    title: work/lib/segtree_lazy_20250614_9_1.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/segtree_lazy_20250614_9_2.test.cpp
+    title: work/lib/segtree_lazy_20250614_9_2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/segtree_lazy_20250614_9_3.test.cpp
+    title: work/lib/segtree_lazy_20250614_9_3.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: work/lib/segtree_lazy_20250614_9_4.test.cpp
+    title: work/lib/segtree_lazy_20250614_9_4.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://atcoder.jp/contests/practice2/submissions/66708733
@@ -67,8 +79,12 @@ data:
   path: work/lib/segtree_lazy_20250614_9.hpp
   requiredBy: []
   timestamp: '2025-06-14 13:26:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - work/lib/segtree_lazy_20250614_9_4.test.cpp
+  - work/lib/segtree_lazy_20250614_9_3.test.cpp
+  - work/lib/segtree_lazy_20250614_9_1.test.cpp
+  - work/lib/segtree_lazy_20250614_9_2.test.cpp
 documentation_of: work/lib/segtree_lazy_20250614_9.hpp
 layout: document
 redirect_from:

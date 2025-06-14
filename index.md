@@ -341,6 +341,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_10.hpp
       title: work/lib/segtree_lazy_20250614_10.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_11.hpp
+      title: work/lib/segtree_lazy_20250614_11.hpp
     - icon: ':warning:'
       path: work/lib/segtree_lazy_20250614_2.hpp
       title: work/lib/segtree_lazy_20250614_2.hpp
@@ -356,13 +359,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_6.hpp
       title: work/lib/segtree_lazy_20250614_6.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_7.hpp
       title: work/lib/segtree_lazy_20250614_7.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_8.hpp
       title: work/lib/segtree_lazy_20250614_8.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_9.hpp
       title: work/lib/segtree_lazy_20250614_9.hpp
     - icon: ':warning:'
@@ -606,6 +609,18 @@ data:
       path: work/lib/segtree_lazy_20250614_10_4.test.cpp
       title: work/lib/segtree_lazy_20250614_10_4.test.cpp
     - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_11_1.test.cpp
+      title: work/lib/segtree_lazy_20250614_11_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_11_2.test.cpp
+      title: work/lib/segtree_lazy_20250614_11_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_11_3.test.cpp
+      title: work/lib/segtree_lazy_20250614_11_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_11_4.test.cpp
+      title: work/lib/segtree_lazy_20250614_11_4.test.cpp
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_5_1.test.cpp
       title: work/lib/segtree_lazy_20250614_5_1.test.cpp
     - icon: ':heavy_check_mark:'
@@ -635,6 +650,42 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_6_5.test.cpp
       title: work/lib/segtree_lazy_20250614_6_5.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_7_1.test.cpp
+      title: work/lib/segtree_lazy_20250614_7_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_7_2.test.cpp
+      title: work/lib/segtree_lazy_20250614_7_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_7_3.test.cpp
+      title: work/lib/segtree_lazy_20250614_7_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_7_4.test.cpp
+      title: work/lib/segtree_lazy_20250614_7_4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_8_1.test.cpp
+      title: work/lib/segtree_lazy_20250614_8_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_8_2.test.cpp
+      title: work/lib/segtree_lazy_20250614_8_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_8_3.test.cpp
+      title: work/lib/segtree_lazy_20250614_8_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_8_4.test.cpp
+      title: work/lib/segtree_lazy_20250614_8_4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_9_1.test.cpp
+      title: work/lib/segtree_lazy_20250614_9_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_9_2.test.cpp
+      title: work/lib/segtree_lazy_20250614_9_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_9_3.test.cpp
+      title: work/lib/segtree_lazy_20250614_9_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_9_4.test.cpp
+      title: work/lib/segtree_lazy_20250614_9_4.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.test.cpp
       title: work/lib/suffix_array_20250608_1.test.cpp
