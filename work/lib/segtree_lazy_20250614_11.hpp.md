@@ -19,8 +19,17 @@ data:
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
-    links: []
-  bundledCode: "#line 1 \"work/lib/segtree_lazy_20250614_11.hpp\"\ntemplate<class\
+    links:
+    - https://atcoder.jp/contests/practice2/submissions/66711863
+    - https://atcoder.jp/contests/practice2/submissions/66711875
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I
+  bundledCode: "#line 1 \"work/lib/segtree_lazy_20250614_11.hpp\"\n//https://atcoder.jp/contests/practice2/submissions/66711875\n\
+    //https://atcoder.jp/contests/practice2/submissions/66711863\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\n\
+    //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H\n\
+    //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I\ntemplate<class\
     \ X,X(*op)(X,X),X(*e)(),class F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>\n\
     struct segtree_lazy{\n\tint n=0,w=0,h=0;\n\tvector<X>d;vector<F>lz;\n\tbool built=0,hung=0;\n\
     \tsegtree_lazy(){}\n\tsegtree_lazy(int n){init(n);}\n\ttemplate<class G>\n\tsegtree_lazy(int\
@@ -59,7 +68,10 @@ data:
     if(f(op(d[i],x))){x=op(d[i],x);return l;}\n\t\t\tif(l+1==r)return r;\n\t\t}\n\t\
     \tpush(i);\n\t\tint c=l+r>>1,j=R<=c?R:min_left(R,f,x,i<<1|1,c,r);\n\t\treturn\
     \ c<j?j:min_left(R,f,x,i<<1,l,c);\n\t}\n};\n"
-  code: "template<class X,X(*op)(X,X),X(*e)(),class F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>\n\
+  code: "//https://atcoder.jp/contests/practice2/submissions/66711875\n//https://atcoder.jp/contests/practice2/submissions/66711863\n\
+    //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G\n\
+    //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H\n//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I\n\
+    template<class X,X(*op)(X,X),X(*e)(),class F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>\n\
     struct segtree_lazy{\n\tint n=0,w=0,h=0;\n\tvector<X>d;vector<F>lz;\n\tbool built=0,hung=0;\n\
     \tsegtree_lazy(){}\n\tsegtree_lazy(int n){init(n);}\n\ttemplate<class G>\n\tsegtree_lazy(int\
     \ n,G f){init(n,f);}\n\ttemplate<class U>\n\tsegtree_lazy(const vector<U>&a){init(a);}\n\
@@ -101,7 +113,7 @@ data:
   isVerificationFile: false
   path: work/lib/segtree_lazy_20250614_11.hpp
   requiredBy: []
-  timestamp: '2025-06-14 16:21:43+09:00'
+  timestamp: '2025-06-14 16:27:00+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - work/lib/segtree_lazy_20250614_11_3.test.cpp

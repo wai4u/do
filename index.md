@@ -293,18 +293,21 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_3.hpp
       title: work/lib/segtree_20250614_3.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_4.hpp
       title: work/lib/segtree_20250614_4.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_5.hpp
       title: work/lib/segtree_20250614_5.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_6.hpp
       title: work/lib/segtree_20250614_6.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_7.hpp
       title: work/lib/segtree_20250614_7.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_8.hpp
+      title: work/lib/segtree_20250614_8.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_dual_20250612_1.hpp
       title: work/lib/segtree_dual_20250612_1.hpp
@@ -501,11 +504,35 @@ data:
       path: work/lib/segtree_20250614_3_2.test.cpp
       title: work/lib/segtree_20250614_3_2.test.cpp
     - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_4_1.test.cpp
+      title: work/lib/segtree_20250614_4_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_4_2.test.cpp
+      title: work/lib/segtree_20250614_4_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_5_1.test.cpp
+      title: work/lib/segtree_20250614_5_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_5_2.test.cpp
+      title: work/lib/segtree_20250614_5_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_6_1.test.cpp
+      title: work/lib/segtree_20250614_6_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_6_2.test.cpp
+      title: work/lib/segtree_20250614_6_2.test.cpp
+    - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_7_1.test.cpp
       title: work/lib/segtree_20250614_7_1.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_7_2.test.cpp
       title: work/lib/segtree_20250614_7_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_8_1.test.cpp
+      title: work/lib/segtree_20250614_8_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_20250614_8_2.test.cpp
+      title: work/lib/segtree_20250614_8_2.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_dual_20250612_1_1.test.cpp
       title: work/lib/segtree_dual_20250612_1_1.test.cpp
