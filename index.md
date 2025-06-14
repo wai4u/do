@@ -357,6 +357,9 @@ data:
       path: work/lib/segtree_lazy_20250614_8.hpp
       title: work/lib/segtree_lazy_20250614_8.hpp
     - icon: ':warning:'
+      path: work/lib/segtree_lazy_20250614_9.hpp
+      title: work/lib/segtree_lazy_20250614_9.hpp
+    - icon: ':warning:'
       path: work/lib/signum_20250611_1.hpp
       title: work/lib/signum_20250611_1.hpp
     - icon: ':warning:'
