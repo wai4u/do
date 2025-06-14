@@ -1,4 +1,3 @@
-#include"io.hpp"
 //recursive
 //https://atcoder.jp/contests/practice2/submissions/66708733
 //https://atcoder.jp/contests/practice2/submissions/66708741
@@ -65,55 +64,3 @@ struct segtree_lazy{
 		return c<j?j:min_left(R,f,x,l,c,i<<1);
 	}
 };
-int op(int x,int y){return max(x,y);}
-int e(){return 0;}
-/*
-int main(){
-	int n,q;
-	cin>>n>>q;
-	segtree_lazy<int,op,e>seg(n);
-	for(int i=0;i<n;i++){
-		int a;
-		cin>>a;
-		seg.set(i,a);
-	}
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		i--;
-		if(t==1){
-			seg.set(i,j);
-		}
-		if(t==2){
-			cout<<seg.prod(i,j)<<'\n';
-		}
-		if(t==3){
-			cout<<seg.max_right(i,[&](int x){return x<j;})+1<<'\n';
-		}
-	}
-}
-*/
-int main(){
-	int n,q;
-	cin>>n>>q;
-	segtree_lazy<int,op,e>seg(n);
-	for(int i=0;i<n;i++){
-		int a;
-		cin>>a;
-		seg.set(n-1-i,a);
-	}
-	while(q--){
-		int t,i,j;
-		cin>>t>>i>>j;
-		i--;
-		if(t==1){
-			seg.set(n-i-1,j);
-		}
-		if(t==2){
-			cout<<seg.prod(n-j,n-i)<<'\n';
-		}
-		if(t==3){
-			cout<<n-seg.min_left(n-i,[&](int x){return x<j;})+1<<'\n';
-		}
-	}
-}
