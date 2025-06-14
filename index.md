@@ -70,6 +70,9 @@ data:
     - icon: ':warning:'
       path: work/1.cpp
       title: work/1.cpp
+    - icon: ':warning:'
+      path: work/2.cpp
+      title: work/2.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -293,6 +296,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_20250614_3.hpp
       title: work/lib/segtree_20250614_3.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_20250614_4.hpp
+      title: work/lib/segtree_20250614_4.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_dual_20250612_1.hpp
       title: work/lib/segtree_dual_20250612_1.hpp
@@ -338,6 +344,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_5.hpp
       title: work/lib/segtree_lazy_20250614_5.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_6.hpp
+      title: work/lib/segtree_lazy_20250614_6.hpp
+    - icon: ':warning:'
+      path: work/lib/segtree_lazy_20250614_7.hpp
+      title: work/lib/segtree_lazy_20250614_7.hpp
     - icon: ':warning:'
       path: work/lib/signum_20250611_1.hpp
       title: work/lib/signum_20250611_1.hpp
@@ -575,6 +587,21 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_5_5.test.cpp
       title: work/lib/segtree_lazy_20250614_5_5.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_6_1.test.cpp
+      title: work/lib/segtree_lazy_20250614_6_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_6_2.test.cpp
+      title: work/lib/segtree_lazy_20250614_6_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_6_3.test.cpp
+      title: work/lib/segtree_lazy_20250614_6_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_6_4.test.cpp
+      title: work/lib/segtree_lazy_20250614_6_4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/segtree_lazy_20250614_6_5.test.cpp
+      title: work/lib/segtree_lazy_20250614_6_5.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.test.cpp
       title: work/lib/suffix_array_20250608_1.test.cpp
