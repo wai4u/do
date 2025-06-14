@@ -1,3 +1,9 @@
+//https://atcoder.jp/contests/practice2/submissions/66711875
+//https://atcoder.jp/contests/practice2/submissions/66711863
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H
+//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I
 template<class X,X(*op)(X,X),X(*e)(),class F=X,X(*mapping)(F,X)=op,F(*composition)(F,F)=op,F(*id)()=e>
 struct segtree_lazy{
 	int n=0,w=0,h=0;
