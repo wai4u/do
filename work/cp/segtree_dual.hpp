@@ -1,1 +1,1 @@
-#include"segtree_dual_20250612_1.hpp"
+#include"segtree_dual_20250614_2.hpp"

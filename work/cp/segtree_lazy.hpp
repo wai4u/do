@@ -1,1 +1,1 @@
-#include"segtree_lazy_20250612_1.hpp"
+#include"segtree_lazy_20250614_10.hpp"
