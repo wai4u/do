@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+//愚直
+//https://atcoder.jp/contests/abc400/submissions/66799513
+long isqrt(long n){
+	long x=0;
+	while(x*x<=n)++x;
+	return x-1;
+}
+int main(){
+	long n;
+	cin>>n;
+	cout<<isqrt(n/2)+isqrt(n/4)<<'\n';
+}
