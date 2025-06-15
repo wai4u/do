@@ -65,11 +65,6 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
-  - name: work
-    pages:
-    - icon: ':warning:'
-      path: work/1.cpp
-      title: work/1.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -308,6 +303,18 @@ data:
     - icon: ':warning:'
       path: work/lib/isqrt_20250615_30.hpp
       title: work/lib/isqrt_20250615_30.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_31.hpp
+      title: work/lib/isqrt_20250615_31.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_32.hpp
+      title: work/lib/isqrt_20250615_32.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_33.hpp
+      title: work/lib/isqrt_20250615_33.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_34.hpp
+      title: work/lib/isqrt_20250615_34.hpp
     - icon: ':warning:'
       path: work/lib/isqrt_20250615_4.hpp
       title: work/lib/isqrt_20250615_4.hpp
