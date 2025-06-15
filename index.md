@@ -65,6 +65,11 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
+  - name: work
+    pages:
+    - icon: ':warning:'
+      path: work/1.cpp
+      title: work/1.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -231,6 +236,96 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1.hpp
       title: work/lib/io_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_1.hpp
+      title: work/lib/isqrt_20250615_1.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_10.hpp
+      title: work/lib/isqrt_20250615_10.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_11.hpp
+      title: work/lib/isqrt_20250615_11.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_12.hpp
+      title: work/lib/isqrt_20250615_12.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_13.hpp
+      title: work/lib/isqrt_20250615_13.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_14.hpp
+      title: work/lib/isqrt_20250615_14.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_15.hpp
+      title: work/lib/isqrt_20250615_15.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_16.hpp
+      title: work/lib/isqrt_20250615_16.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_17.hpp
+      title: work/lib/isqrt_20250615_17.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_18.hpp
+      title: work/lib/isqrt_20250615_18.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_19.hpp
+      title: work/lib/isqrt_20250615_19.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_2.hpp
+      title: work/lib/isqrt_20250615_2.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_20.hpp
+      title: work/lib/isqrt_20250615_20.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_21.hpp
+      title: work/lib/isqrt_20250615_21.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_22.hpp
+      title: work/lib/isqrt_20250615_22.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_23.hpp
+      title: work/lib/isqrt_20250615_23.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_24.hpp
+      title: work/lib/isqrt_20250615_24.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_25.hpp
+      title: work/lib/isqrt_20250615_25.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_26.hpp
+      title: work/lib/isqrt_20250615_26.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_27.hpp
+      title: work/lib/isqrt_20250615_27.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_28.hpp
+      title: work/lib/isqrt_20250615_28.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_29.hpp
+      title: work/lib/isqrt_20250615_29.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_3.hpp
+      title: work/lib/isqrt_20250615_3.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_30.hpp
+      title: work/lib/isqrt_20250615_30.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_4.hpp
+      title: work/lib/isqrt_20250615_4.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_5.hpp
+      title: work/lib/isqrt_20250615_5.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_6.hpp
+      title: work/lib/isqrt_20250615_6.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_7.hpp
+      title: work/lib/isqrt_20250615_7.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_8.hpp
+      title: work/lib/isqrt_20250615_8.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250615_9.hpp
+      title: work/lib/isqrt_20250615_9.hpp
     - icon: ':warning:'
       path: work/lib/lazy_segtree_20250608_1.hpp
       title: work/lib/lazy_segtree_20250608_1.hpp
