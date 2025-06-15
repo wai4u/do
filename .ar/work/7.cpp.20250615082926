@@ -1,0 +1,22 @@
+#include"io.hpp"
+int main(){
+	int n,h,m;
+	cin>>n>>h>>m;
+	vector<int>a(n),b(n);
+	for(int i=0;i<n;i++)cin>>a[i]>>b[i];
+	vector<bitset<3<<10>>dp(h+1);
+	dp[h][m]=1;
+	for(int i=0;i<n;i++){
+		bool ok=0;
+		for(int j=0;j<=h;j++){
+			dp[j]>>=b[i];
+			if(j+a[i]<=h)dp[j]|=dp[j+a[i]];
+			if(dp[j].any())ok=1;
+		}
+		if(!ok){
+			cout<<i<<'\n';
+			return 0;
+		}
+	}
+	cout<<n<<'\n';
+}

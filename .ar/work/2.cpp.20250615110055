@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	string s;
+	cin>>s;
+	int n=s.size();
+	bool ok=1;
+	if(s[0]>='a')ok=0;
+	for(int i=1;i<n;i++)if(s[i]<'a')ok=0;
+	cout<<(ok?"Yes":"No")<<'\n';
+}

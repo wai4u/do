@@ -1,0 +1,25 @@
+#include"io.hpp"
+int main(){
+	int n,q;
+	cin>>n>>q;
+	vector<int>c(n+1);
+	int i=1,j=0;
+	while(q--){
+		int x;
+		cin>>x;
+		if(x>=1){
+			c[x]++;
+			cout<<x<<'\n';
+			continue;
+		}
+		while(c[i]!=j){
+			i++;
+			if(i==n+1){
+				i=1;
+				j++;
+			}
+		}
+		cout<<i<<'\n';
+		c[i]++;
+	}
+}

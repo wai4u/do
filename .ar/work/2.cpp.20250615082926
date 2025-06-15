@@ -1,0 +1,16 @@
+#include"io.hpp"
+int main(){
+	int n,q;
+	cin>>n>>q;
+	vector<int>c(n+1);
+	while(q--){
+		int x;
+		cin>>x;
+		if(x==0){
+			x=1;
+			for(int i=1;i<=n;i++)if(c[i]<c[x])x=i;
+		}
+		cout<<x<<'\n';
+		c[x]++;
+	}
+}
