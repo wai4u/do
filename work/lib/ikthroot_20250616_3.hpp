@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 //exponential binary search
 template<class T>
 T ikthroot(T n,int k){
@@ -28,6 +26,7 @@ T ikthroot(T n,int k){
 	assert(f(ok)&&!f(ok+1));
 	return ok;
 }
+/*
 #include"rng.hpp"
 #include"io.hpp"
 int main(){
@@ -43,3 +42,4 @@ int main(){
 		cout<<n<<' '<<x<<' '<<n-(__int128)x*x*x<<' '<<n-__int128(x+1)*(x+1)*(x+1)<<'\n';
 	}
 }
+*/
