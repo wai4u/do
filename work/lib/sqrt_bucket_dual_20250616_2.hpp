@@ -1,6 +1,3 @@
-//#include<bits/stdc++.h>
-//using namespace std;
-#include"io.hpp"
 //non commutative monoid
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_D
 template<class T,T(*op)(T,T),T(*e)()>
@@ -42,24 +39,3 @@ struct sqrt_bucket_dual{
 		for(int i=max(k*m,l);i<r;i++)a[i]=op(a[i],x);
 	}
 };
-int op(int x,int y){return y==-1?x:y;}
-int e(){return -1;}
-int main(){
-	int n,q;
-	cin>>n>>q;
-	sqrt_bucket_dual<int,op,e>seg(n+1);
-	for(int i=0;i<=n;i++)seg[i]=(1l<<31)-1;
-	while(q--){
-		int t;
-		cin>>t;
-		if(t==0){
-			int l,r,x;
-			cin>>l>>r>>x;
-			seg.apply(l,r+1,x);
-		}else{
-			int i;
-			cin>>i;
-			cout<<seg[i]<<'\n';
-		}
-	}
-}

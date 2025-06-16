@@ -1,0 +1,42 @@
+//#include<bits/stdc++.h>
+//using namespace std;
+#include"io.hpp"
+int main(){
+	int n,q;
+	cin>>n>>q;
+	int m=1;
+	while(m*m<n)m++;
+	int e=(1l<<31)-1;
+	vector<int>s(m,e);
+	vector<int>a(n,e);
+	while(q--){
+		int t;
+		cin>>t;
+		if(t==0){
+			int i,x;
+			cin>>i>>x;
+			int j=i/m;
+			assert(s[j]<=a[i]);
+			if(x<=a[i])s[j]=min(s[j],x);
+			else if(s[j]==a[i]){
+				s[j]=e;
+				a[i]=x;
+				for(int i=j*m;i<(j+1)*m;i++)s[j]=min(s[j],a[i]);
+			}
+			a[i]=x;
+		}else{
+			int l,r;
+			cin>>l>>r;
+			r++;
+			int ans=e;
+			int j=l/m,k=r/m;
+			if(j<k&&j*m<l){
+				for(int i=l;i<(j+1)*m;i++)ans=min(ans,a[i]);
+				j++;
+			}
+			for(int i=j;i<k;i++)ans=min(ans,s[i]);
+			for(int i=max(k*m,l);i<r;i++)ans=min(ans,a[i]);
+			cout<<ans<<'\n';
+		}
+	}
+}
