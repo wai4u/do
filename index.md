@@ -140,6 +140,12 @@ data:
     - icon: ':warning:'
       path: work/lib/bimatch_20250608_1.hpp
       title: work/lib/bimatch_20250608_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/binary_gcd_20250616_1.hpp
+      title: work/lib/binary_gcd_20250616_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/binary_gcd_20250616_2.hpp
+      title: work/lib/binary_gcd_20250616_2.hpp
     - icon: ':warning:'
       path: work/lib/bits_20250608_1.hpp
       title: work/lib/bits_20250608_1.hpp
@@ -242,6 +248,21 @@ data:
     - icon: ':warning:'
       path: work/lib/floor_ceil_div_20250616_2.hpp
       title: work/lib/floor_ceil_div_20250616_2.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_1.hpp
+      title: work/lib/gcd_20250616_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_2.hpp
+      title: work/lib/gcd_20250616_2.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_3.hpp
+      title: work/lib/gcd_20250616_3.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_4.hpp
+      title: work/lib/gcd_20250616_4.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_5.hpp
+      title: work/lib/gcd_20250616_5.hpp
     - icon: ':warning:'
       path: work/lib/hld_20250608_1.hpp
       title: work/lib/hld_20250608_1.hpp
@@ -606,6 +627,12 @@ data:
   - name: work/lib
     pages:
     - icon: ':heavy_check_mark:'
+      path: work/lib/binary_gcd_20250616_1.test.cpp
+      title: work/lib/binary_gcd_20250616_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/binary_gcd_20250616_2.test.cpp
+      title: work/lib/binary_gcd_20250616_2.test.cpp
+    - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_1deg_20250614_1.test.cpp
       title: work/lib/fenwick_1deg_20250614_1.test.cpp
     - icon: ':heavy_check_mark:'
@@ -659,6 +686,21 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/fenwick_primal_20250608_2_3.test.cpp
       title: work/lib/fenwick_primal_20250608_2_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_1.test.cpp
+      title: work/lib/gcd_20250616_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_2.test.cpp
+      title: work/lib/gcd_20250616_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_3.test.cpp
+      title: work/lib/gcd_20250616_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_4.test.cpp
+      title: work/lib/gcd_20250616_4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/gcd_20250616_5.test.cpp
+      title: work/lib/gcd_20250616_5.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1_1.test.cpp
       title: work/lib/io_20250608_1_1.test.cpp
