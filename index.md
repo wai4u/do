@@ -65,6 +65,11 @@ data:
     - icon: ':warning:'
       path: atcoder/twosat.hpp
       title: atcoder/twosat.hpp
+  - name: work
+    pages:
+    - icon: ':warning:'
+      path: work/1.cpp
+      title: work/1.cpp
   - name: work/cp
     pages:
     - icon: ':warning:'
@@ -88,6 +93,9 @@ data:
     - icon: ':warning:'
       path: work/cp/io.hpp
       title: work/cp/io.hpp
+    - icon: ':warning:'
+      path: work/cp/isqrt.hpp
+      title: work/cp/isqrt.hpp
     - icon: ':warning:'
       path: work/cp/manacher.hpp
       title: work/cp/manacher.hpp
@@ -333,6 +341,45 @@ data:
     - icon: ':warning:'
       path: work/lib/isqrt_20250615_9.hpp
       title: work/lib/isqrt_20250615_9.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_1.hpp
+      title: work/lib/isqrt_20250616_1.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_10.hpp
+      title: work/lib/isqrt_20250616_10.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_2.hpp
+      title: work/lib/isqrt_20250616_2.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_3.hpp
+      title: work/lib/isqrt_20250616_3.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_4.hpp
+      title: work/lib/isqrt_20250616_4.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_4_test.cpp
+      title: work/lib/isqrt_20250616_4_test.cpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_5.hpp
+      title: work/lib/isqrt_20250616_5.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_5_test.cpp
+      title: work/lib/isqrt_20250616_5_test.cpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_6.hpp
+      title: work/lib/isqrt_20250616_6.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_6_test.cpp
+      title: work/lib/isqrt_20250616_6_test.cpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_7.hpp
+      title: work/lib/isqrt_20250616_7.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_8.hpp
+      title: work/lib/isqrt_20250616_8.hpp
+    - icon: ':warning:'
+      path: work/lib/isqrt_20250616_9.hpp
+      title: work/lib/isqrt_20250616_9.hpp
     - icon: ':warning:'
       path: work/lib/lazy_segtree_20250608_1.hpp
       title: work/lib/lazy_segtree_20250608_1.hpp
