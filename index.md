@@ -582,6 +582,21 @@ data:
       path: work/lib/sqrt_20250616_2.hpp
       title: work/lib/sqrt_20250616_2.hpp
     - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_20250616_1.hpp
+      title: work/lib/sqrt_bucket_20250616_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_20250616_2.hpp
+      title: work/lib/sqrt_bucket_20250616_2.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_20250616_3.hpp
+      title: work/lib/sqrt_bucket_20250616_3.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_dual_20250616_1.hpp
+      title: work/lib/sqrt_bucket_dual_20250616_1.hpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_dual_20250616_2.hpp
+      title: work/lib/sqrt_bucket_dual_20250616_2.hpp
+    - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.hpp
       title: work/lib/suffix_array_20250608_1.hpp
     - icon: ':warning:'
@@ -965,6 +980,24 @@ data:
     - icon: ':heavy_check_mark:'
       path: work/lib/segtree_lazy_20250614_9_4.test.cpp
       title: work/lib/segtree_lazy_20250614_9_4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_20250616_1.test.cpp
+      title: work/lib/sqrt_bucket_20250616_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_20250616_2.test.cpp
+      title: work/lib/sqrt_bucket_20250616_2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_20250616_3.test.cpp
+      title: work/lib/sqrt_bucket_20250616_3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_dual_20250616_1.test.cpp
+      title: work/lib/sqrt_bucket_dual_20250616_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_dual_20250616_2_1.test.cpp
+      title: work/lib/sqrt_bucket_dual_20250616_2_1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: work/lib/sqrt_bucket_dual_20250616_2_2.test.cpp
+      title: work/lib/sqrt_bucket_dual_20250616_2_2.test.cpp
     - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.test.cpp
       title: work/lib/suffix_array_20250608_1.test.cpp
