@@ -1,19 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: work/lib/io_20250608_1.hpp
-    title: work/lib/io_20250608_1.hpp
-  - icon: ':heavy_check_mark:'
-    path: work/lib/optimize_20250608_1.hpp
-    title: work/lib/optimize_20250608_1.hpp
-  _extendedRequiredBy:
   - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
-  - icon: ':warning:'
-    path: work/lib/main_20250608_1.cpp
-    title: work/lib/main_20250608_1.cpp
+    path: work/lib/ikthroot_20250616_3.hpp
+    title: work/lib/ikthroot_20250616_3.hpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -31,26 +22,23 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.4/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: io_20250608_1.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ikthroot_20250616_3.hpp:\
     \ line -1: no such header\n"
-  code: '#include"io_20250608_1.hpp"
+  code: '#include"ikthroot_20250616_3.hpp"
 
     '
   dependsOn:
-  - work/lib/io_20250608_1.hpp
-  - work/lib/optimize_20250608_1.hpp
+  - work/lib/ikthroot_20250616_3.hpp
   isVerificationFile: false
-  path: work/cp/io.hpp
-  requiredBy:
-  - work/lib/main_20250608_1.cpp
-  - work/1.cpp
-  timestamp: '2025-06-08 09:29:55+09:00'
+  path: work/cp/ikthroot.hpp
+  requiredBy: []
+  timestamp: '2025-06-16 14:49:12+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: work/cp/io.hpp
+documentation_of: work/cp/ikthroot.hpp
 layout: document
 redirect_from:
-- /library/work/cp/io.hpp
-- /library/work/cp/io.hpp.html
-title: work/cp/io.hpp
+- /library/work/cp/ikthroot.hpp
+- /library/work/cp/ikthroot.hpp.html
+title: work/cp/ikthroot.hpp
 ---

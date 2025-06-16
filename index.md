@@ -91,6 +91,9 @@ data:
       path: work/cp/fenwick_monoid.hpp
       title: work/cp/fenwick_monoid.hpp
     - icon: ':warning:'
+      path: work/cp/ikthroot.hpp
+      title: work/cp/ikthroot.hpp
+    - icon: ':warning:'
       path: work/cp/io.hpp
       title: work/cp/io.hpp
     - icon: ':warning:'
@@ -236,6 +239,15 @@ data:
     - icon: ':warning:'
       path: work/lib/hld_20250608_1.hpp
       title: work/lib/hld_20250608_1.hpp
+    - icon: ':warning:'
+      path: work/lib/ikthroot_20250616_1.hpp
+      title: work/lib/ikthroot_20250616_1.hpp
+    - icon: ':warning:'
+      path: work/lib/ikthroot_20250616_2.hpp
+      title: work/lib/ikthroot_20250616_2.hpp
+    - icon: ':warning:'
+      path: work/lib/ikthroot_20250616_3.hpp
+      title: work/lib/ikthroot_20250616_3.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/io_20250608_1.hpp
       title: work/lib/io_20250608_1.hpp
