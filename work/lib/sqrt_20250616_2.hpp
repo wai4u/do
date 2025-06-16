@@ -1,5 +1,4 @@
-#include<bits/stdc++.h>
-using namespace std;
+//binary search
 double sqrt(double x){
 	assert(0<=x&&x<1e9);
 	double ok=0,ng=max(1.,x/2);
@@ -9,13 +8,13 @@ double sqrt(double x){
 	}
 	return ok;
 }
+/*
 #include"rng.hpp"
 int main(){
 	for(int i=0;i<100;i++){
 		double y=rng()%(ulong)1e9;
 		double x=sqrt(y);
-		//double x=std::sqrt(y);
-		//double x=::sqrt(y);
 		cout<<y<<' '<<x<<' '<<abs(y-x*x)<<'\n';
 	}
 }
+*/
