@@ -2,8 +2,8 @@
 data:
   _extendedDependsOn:
   - icon: ':warning:'
-    path: work/lib/isqrt_20250616_7.hpp
-    title: work/lib/isqrt_20250616_7.hpp
+    path: work/lib/isqrt_20250616_11.hpp
+    title: work/lib/isqrt_20250616_11.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -22,17 +22,17 @@ data:
     \                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.13.4/x64/lib/python3.13/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: isqrt_20250616_7.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: isqrt_20250616_11.hpp:\
     \ line -1: no such header\n"
-  code: '#include"isqrt_20250616_7.hpp"
+  code: '#include"isqrt_20250616_11.hpp"
 
     '
   dependsOn:
-  - work/lib/isqrt_20250616_7.hpp
+  - work/lib/isqrt_20250616_11.hpp
   isVerificationFile: false
   path: work/cp/isqrt.hpp
   requiredBy: []
-  timestamp: '2025-06-16 13:23:08+09:00'
+  timestamp: '2025-06-16 14:52:38+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: work/cp/isqrt.hpp

@@ -360,6 +360,9 @@ data:
       path: work/lib/isqrt_20250616_10.hpp
       title: work/lib/isqrt_20250616_10.hpp
     - icon: ':warning:'
+      path: work/lib/isqrt_20250616_11.hpp
+      title: work/lib/isqrt_20250616_11.hpp
+    - icon: ':warning:'
       path: work/lib/isqrt_20250616_2.hpp
       title: work/lib/isqrt_20250616_2.hpp
     - icon: ':warning:'
