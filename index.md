@@ -237,6 +237,12 @@ data:
       path: work/lib/fenwick_primal_20250608_2.hpp
       title: work/lib/fenwick_primal_20250608_2.hpp
     - icon: ':warning:'
+      path: work/lib/floor_ceil_div_20250616_1.hpp
+      title: work/lib/floor_ceil_div_20250616_1.hpp
+    - icon: ':warning:'
+      path: work/lib/floor_ceil_div_20250616_2.hpp
+      title: work/lib/floor_ceil_div_20250616_2.hpp
+    - icon: ':warning:'
       path: work/lib/hld_20250608_1.hpp
       title: work/lib/hld_20250608_1.hpp
     - icon: ':warning:'

@@ -1,0 +1,33 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
+  _pathExtension: hpp
+  _verificationStatusIcon: ':warning:'
+  attributes:
+    links: []
+  bundledCode: "#line 1 \"work/lib/floor_ceil_div_20250616_2.hpp\"\ntemplate<class\
+    \ T,class U>\nauto floor_div(T a,U b){return a/b-((a^b)<0&&a%b);}\ntemplate<class\
+    \ T,class U>\nauto ceil_div(T a,U b){return a/b+((a^b)>0&&a%b);}\n/*\nint main(){\n\
+    \tfor(int a:vector{3,-3})for(int b:vector{10,-10}){\n\t\tcout<<a<<' '<<b<<' '<<floor_div(b,a)<<'\
+    \ '<<ceil_div(b,a)<<'\\n';\n\t}\n}\n*/\n"
+  code: "template<class T,class U>\nauto floor_div(T a,U b){return a/b-((a^b)<0&&a%b);}\n\
+    template<class T,class U>\nauto ceil_div(T a,U b){return a/b+((a^b)>0&&a%b);}\n\
+    /*\nint main(){\n\tfor(int a:vector{3,-3})for(int b:vector{10,-10}){\n\t\tcout<<a<<'\
+    \ '<<b<<' '<<floor_div(b,a)<<' '<<ceil_div(b,a)<<'\\n';\n\t}\n}\n*/\n"
+  dependsOn: []
+  isVerificationFile: false
+  path: work/lib/floor_ceil_div_20250616_2.hpp
+  requiredBy: []
+  timestamp: '2025-06-16 15:00:22+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: work/lib/floor_ceil_div_20250616_2.hpp
+layout: document
+redirect_from:
+- /library/work/lib/floor_ceil_div_20250616_2.hpp
+- /library/work/lib/floor_ceil_div_20250616_2.hpp.html
+title: work/lib/floor_ceil_div_20250616_2.hpp
+---
