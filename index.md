@@ -533,6 +533,12 @@ data:
     - icon: ':warning:'
       path: work/lib/signum_20250611_2.hpp
       title: work/lib/signum_20250611_2.hpp
+    - icon: ':warning:'
+      path: work/lib/sqrt_20250616_1.hpp
+      title: work/lib/sqrt_20250616_1.hpp
+    - icon: ':warning:'
+      path: work/lib/sqrt_20250616_2.hpp
+      title: work/lib/sqrt_20250616_2.hpp
     - icon: ':heavy_check_mark:'
       path: work/lib/suffix_array_20250608_1.hpp
       title: work/lib/suffix_array_20250608_1.hpp

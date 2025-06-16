@@ -4,10 +4,7 @@ data:
   - icon: ':warning:'
     path: work/lib/isqrt_20250616_7.hpp
     title: work/lib/isqrt_20250616_7.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: work/1.cpp
-    title: work/1.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -34,8 +31,7 @@ data:
   - work/lib/isqrt_20250616_7.hpp
   isVerificationFile: false
   path: work/cp/isqrt.hpp
-  requiredBy:
-  - work/1.cpp
+  requiredBy: []
   timestamp: '2025-06-16 13:23:08+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
