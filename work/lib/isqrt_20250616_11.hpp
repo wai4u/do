@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 //https://atcoder.jp/contests/abc400/submissions/66824169
 template<class T>
 T isqrt(T n){
@@ -9,9 +7,4 @@ T isqrt(T n){
 	assert(y*y>=n);
 	do{x=y,y=x+n/x>>1;}while(y<x);
 	return x;
-}
-int main(){
-	long n;
-	cin>>n;
-	cout<<isqrt(n/2)+isqrt(n/4)<<'\n';
 }
