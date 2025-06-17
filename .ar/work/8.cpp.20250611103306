@@ -1,6 +1,0 @@
-#include"io.hpp"
-int main(){
-	string a,b,c;
-	cin>>a>>b>>c;
-	cout<<"A"s+char(a[1]^b[1]^c[1]^'B'^'R'^'G'^'H')+'C'<<'\n';
-}

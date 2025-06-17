@@ -1,8 +1,0 @@
-#include"io.hpp"
-int main(){
-	int k;
-	cin>>k;
-	string s;
-	while(k--)s+="ACL";
-	cout<<s<<'\n';
-}

@@ -1,6 +1,0 @@
-#include"io.hpp"
-int main(){
-	long a,b,c,d;
-	cin>>a>>b>>c>>d;
-	cout<<(min(b,d)>=max(a,c)?"Yes":"No")<<'\n';
-}

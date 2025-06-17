@@ -1,8 +1,0 @@
-#include"io.hpp"
-template<class T,T(*op)(T,T),T(*e)()>
-struct segtree{
-	int n;
-	vector<T>
-};
-int main(){
-}

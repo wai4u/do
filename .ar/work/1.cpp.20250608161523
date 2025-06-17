@@ -1,9 +1,0 @@
-#include"io.hpp"
-template<class X,X(*op)(X,T),X(*e)(),F,X(*mapping)(F,X),F(*composition)(F,F),F(*id)()>
-struct lazy_segtree{
-	
-};
-int main(){
-	int n,q;
-	cin>>n>>q;
-}
