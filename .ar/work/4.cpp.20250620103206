@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int h,w;
+	cin>>h>>w;
+	int a,b,c,d;
+	cin>>a>>b>>c>>d;
+	a--,b--,c--,d--;
+	vector<string>g(h);
+	for(int i=0;i<h;i++)cin>>g[i];
+	queue<pair<int,int>>que;
+	auto dist=vector(h,vector(w,-1));
+	dist[a][b]=0;
+	que.push(make_pair(a,b));
+	int dy[]={0,1,0,-1},dx[]={1,0,-1,0};
+	while(que.size()){
+		auto[i,j]=que.front();que.pop();
+		for(int k=0;k<4;k++){
+			int y=i+dy[k],x=j+dx[k];
+			if(g[y][x]=='.'&&dist[y][x]==-1){
+				dist[y][x]=dist[i][j]+1;
+				que.push(make_pair(y,x));
+			}
+		}
+	}
+	cout<<dist[c][d]<<'\n';
+}

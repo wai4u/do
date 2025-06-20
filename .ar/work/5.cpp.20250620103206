@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+#include"fenwick.hpp"
+int main(){
+	int n;
+	cin>>n;
+	vector<vector<pair<int,int>>>g(n);
+	for(int i=0;i<n-1;i++){
+		int u,v;
+		cin>>u>>v;
+		u--,v--;
+		g[u].push_back(make_pair(i,v));
+		g[v].push_back(make_pair(i,u));
+	}
+	vector<int>L(n),R(n),ev(n-1);
+	int k=0;
+	auto dfs=[&](auto dfs,int u,int p)->void{
+		L[u]=k++;
+		for(auto[i,v]:g[u])if(v!=p){
+			ev[i]=v;
+			dfs(dfs,v,u);
+		}
+		R[u]=k;
+	};
+	dfs(dfs,0,-1);
+	fenwick<int>s(n);
+	for(int i=0;i<n;i++)s.add(i,1);
+	int tot=n;
+	int q;cin>>q;
+	while(q--){
+		int t;
+		cin>>t;
+		if(t==1){
+			int u,w;
+			cin>>u>>w;
+			u--;
+			tot+=w;
+			s.add(L[u],w);
+		}else{
+			int i;
+			cin>>i;
+			i--;
+			int res=tot-2*(s[R[ev[i]]-1]-s[L[ev[i]]-1]);
+			cout<<abs(res)<<'\n';
+		}
+	}
+}

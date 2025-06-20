@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	//そのsubtreeに入った方が何点取れるか。
+	//合計は変わらないからA-Bの大きい方からとっていきたい。
+	//A-B>=0の間はずっと俺のターンができる限りそれをとっていく。(偶数サイズのsubtree)
+	//ずっと俺のターンができなくなってA-B>=0があるならそれを取る。
+	//最後には負のずっと俺のターンが続く。A-B<0
+	int n;
+	cin>>n;
+	vector<vector<int>>ch(n);
+	for(int i=1;i<n;i++){
+		int p;
+		cin>>p;
+		ch[p-1].push_back(i);
+	}
+	auto dfs=[&](auto dfs,int u)->pair<int,int>{
+		//先手が後手に比べて最大何点得するか。手番が入れ替わるかどうか
+		int s=1,f=1;
+		vector<pair<int,int>>b;
+		for(int v:ch[u]){
+			auto[t,g]=dfs(dfs,v);
+			//b.push_back(make_pair(-t,g));
+			b.push_back(make_pair(t,g));
+			//f^=g;
+		}
+		sort(b.begin(),b.end(),[&](auto&p,auto&q){
+			auto[s,f]=p;
+			auto[t,g]=q;
+			if(s>=0&&t>=0)return f<g;//ずっと俺のターン
+			if((s>=0)^(t<0))return s>=0;
+			return f>g;
+		});
+		for(auto[t,g]:b){
+			if(f)s+=t;
+			else s-=t;
+			f^=g;
+		}
+		cout<<u<<' '<<s<<' '<<f<<'\n';
+		return{s,f};
+	};
+	auto[s,_]=dfs(dfs,0);
+	cout<<(s+n)/2<<'\n';
+}

@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	string s;
+	cin>>s;
+	bool f=0;
+	string t="";
+	int j=n;
+	while(1){
+		f^=1;
+		bool ok=1;
+		for(int i=j;i-->0;)if(s[i]=='0'+f){
+			ok=0;
+			t+=string(i+1,'A'+(f^1));
+			j=i;
+			break;
+		}
+		if(ok)break;
+	}
+	cout<<t.size()<<'\n';
+	cout<<t<<'\n';
+}
