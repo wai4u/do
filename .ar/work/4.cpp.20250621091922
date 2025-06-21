@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	string s;
+	cin>>n>>s;
+	int l=0;
+	string t="";
+	for(auto x:s){
+		if(x=='('){
+			l++;
+			t+='(';
+		}else{
+			if(!l){
+				t+=')';
+			}
+			else{
+				l--;
+				t.pop_back();
+			}
+		}
+	}
+	cout<<string(t.size()-l,'(')+s+string(l,')')<<'\n';
+}
