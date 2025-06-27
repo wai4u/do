@@ -1,0 +1,8 @@
+.DS_Store*
+__pycache__*
+a
+a.[0-9]*
+*.out*
+*.swp*
+.generated*
+generated.*
